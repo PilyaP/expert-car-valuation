@@ -1,0 +1,17 @@
+# сборка/кеш
+dist/
+build/
+.vite/
+.next/
+out/
+
+# зависимости
+node_modules/
+
+# env/ключи
+.env*
+*.local
+
+# редакторы/OS
+.DS_Store
+Thumbs.db
