@@ -1,17 +1,35 @@
-# сборка/кеш
+# сборка / кеш
 dist/
 build/
 .vite/
 .next/
 out/
+coverage/
+*.tsbuildinfo
 
 # зависимости
 node_modules/
 
-# env/ключи
+# логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# env / ключи
 .env*
 *.local
 
-# редакторы/OS
+# редакторы / ОС
 .DS_Store
 Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+
+# кэш линтеров и пр.
+.eslintcache
+.stylelintcache
