@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://expert-car-ai.vercel.app/sitemap.xml

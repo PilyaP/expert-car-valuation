@@ -1,7 +1,8 @@
 import { Button } from "./components/ui/button";
 import { Card, CardContent } from "./components/ui/card";
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
-import logoImage from 'figma:asset/b530134b535b5a5cffbde242bd61e3c29cbb5979.png';
+import logoImage from '@/assets/logo.png';
+
 import React from 'react';
 import { 
   Building, 
