@@ -758,7 +758,7 @@ export default function App() {
                     <MapPin className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="text-gray-900 mb-2">Зона обслуг��вування</h3>
+                    <h3 className="text-gray-900 mb-2">Зона обслуговування</h3>
                     <p className="text-gray-600 leading-relaxed mb-2">
                       <strong>Основна робота:</strong> м. Дніпро<br />
                       <strong>Виїзди:</strong> вся Дніпропетровська область
