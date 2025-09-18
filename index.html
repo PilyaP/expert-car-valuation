@@ -14,10 +14,31 @@
       content="оцінка авто Дніпро, оцінка при ДТП Дніпро, судовий автоексперт, експертна оцінка автомобіля"
     />
     <meta name="author" content="Пилипенко Анатолій Іванович" />
-    <meta name="theme-color" content="#0a2b6b" />
+    <meta
+      name="robots"
+      content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#0a2b6b"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#0a2b6b"
+    />
+    <meta name="color-scheme" content="light" />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://expert-car-ai.vercel.app/" />
+
+    <!-- Hreflang (залиш один, якщо лише укр) -->
+    <link
+      rel="alternate"
+      href="https://expert-car-ai.vercel.app/"
+      hreflang="uk-UA"
+    />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -31,49 +52,94 @@
       content="Офіційні висновки та експертні звіти: суд, МРЕО, страхові, нотаріус. Виїзд по області."
     />
     <meta property="og:url" content="https://expert-car-ai.vercel.app/" />
-    <meta property="og:image" content="/og.jpg" />
+    <meta
+      property="og:image"
+      content="https://expert-car-ai.vercel.app/og.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://expert-car-ai.vercel.app/og.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
       content="Логотип та заголовок: Оцінка авто Дніпро"
     />
+    <meta property="og:locale" content="uk_UA" />
+    <!-- <meta property="og:locale:alternate" content="ru_RU"> -->
 
-<!-- Open Graph -->
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="Судовий автоексперт Дніпро" />
-<meta property="og:title" content="Оцінка авто у Дніпрі — незалежний судовий експерт" />
-<meta property="og:description" content="Офіційні висновки та експертні оцінки: суд, МРЕО, страхові, нотаріус. Виїзд по області." />
-<meta property="og:url" content="https://expert-car-ai.vercel.app/" />
-<meta property="og:image" content="https://expert-car-ai.vercel.app/og.jpg" />
-<meta property="og:image:secure_url" content="https://expert-car-ai.vercel.app/og.jpg" />
-<meta property="og:image:type" content="image/jpeg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Логотип та заголовок: Оцінка авто Дніпро" />
-<meta property="og:locale" content="uk_UA" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Оцінка авто у Дніпрі — незалежний судовий експерт"
+    />
+    <meta
+      name="twitter:description"
+      content="Професійна незалежна оцінка авто, збитки при ДТП, офіційні експертні звіти. 29+ років досвіду."
+    />
+    <meta
+      name="twitter:image"
+      content="https://expert-car-ai.vercel.app/og.jpg"
+    />
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Оцінка авто у Дніпрі — незалежний судовий експерт" />
-<meta name="twitter:description" content="Професійна незалежна оцінка авто, збитки при ДТП, офіційні експертні звіти. 29+ років досвіду." />
-<meta name="twitter:image" content="https://expert-car-ai.vercel.app/og.jpg" />
-
-
-    <!-- Icons (усі файли в /public) -->
+    <!-- Icons -->
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Шрифт з кирилицею -->
+    <!-- Fonts: CLS-safe -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload + stylesheet (swap) -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Базова типографіка для мінімізації «стрибків» -->
+    <style>
+      :root {
+        --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      }
+      html {
+        text-size-adjust: 100%;
+      }
+      body {
+        font-family: var(--font-sans);
+        line-height: 1.5; /* стабільна висота рядка */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+      /* Заголовки — без ваги «jump» між системним і Manrope */
+      h1,
+      h2,
+      h3 {
+        font-weight: 700;
+        letter-spacing: -0.01em;
+      }
+      img,
+      svg,
+      video {
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
+    </style>
 
     <!-- JSON-LD -->
     <script type="application/ld+json">
