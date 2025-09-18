@@ -24,6 +24,13 @@ import {
   X
 } from 'lucide-react';
 import { useState } from 'react';
+const mapsHref =
+  "https://www.google.com/maps/search/?api=1&query=" +
+  encodeURIComponent("смт Слобожанське, вул. Нижньодніпровська, 1, Дніпропетровська обл., Україна");
+
+
+
+
 
 export default function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -178,7 +185,7 @@ export default function App() {
                 size="lg" 
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg"
               >
-                Замовити оцінку
+                <a href="tel:+380972158437">Замовити оцінку</a>
               </Button>
               
               <Button 
@@ -186,7 +193,7 @@ export default function App() {
                 size="lg" 
                 className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg"
               >
-                Дізнатися більше
+                <a href="#contacts">Дізнатися більше</a>
               </Button>
             </div>
 
@@ -328,13 +335,21 @@ export default function App() {
                   </h4>
                   <p className="text-gray-600">
                     <strong>Вся Дніпропетровська область</strong><br />
-                    Виїзджаємо для проведення експертизи на місці
+                    Виїжджаємо для проведення експертизи на місці
                   </p>
                 </div>
               </div>
               <div className="mt-6 pt-6 border-t border-green-200">
                 <p className="text-gray-700 text-center">
-                  🏢 <strong>Офіс:</strong> смт. Слобожанське, вул. Нижньодніпровська, 1
+                  🏢 <strong>Офіс: </strong>
+                  <a
+    href={mapsHref}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-white transition-colors"
+  >
+    смт. Слобожанське, вул. Нижньодніпровська, 1
+  </a>
                 </p>
               </div>
             </div>
@@ -677,13 +692,14 @@ export default function App() {
                   Замовити оцінку
                 </Button>
                 
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3"
-                >
-                  Переглянути сертифікати
-                </Button>
+ <Button 
+  variant="outline" 
+  size="lg" 
+  className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3"
+  onClick={() => window.open('/certificate-22.jpg', '_blank')}
+>
+  Переглянути сертифікати
+</Button>
               </div>
             </div>
           </div>
@@ -765,32 +781,76 @@ export default function App() {
                       <strong>Виїзди:</strong> вся Дніпропетровська область
                     </p>
                     <p className="text-gray-600 text-sm">
-                      Офіс: смт. Слобожанське, вул. Нижньодніпровська, 1
+                      Офіс:   <a
+    href={mapsHref}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-white transition-colors"
+  >
+    смт. Слобожанське, вул. Нижньодніпровська, 1
+  </a>
                     </p>
                   </div>
                 </div>
+{/* Phone Numbers */}
+<div className="flex items-start space-x-4">
+  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+    <Phone className="w-6 h-6 text-green-600" />
+  </div>
 
-                {/* Phone Numbers */}
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-green-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-gray-900 mb-2">Телефони</h3>
-                    <div className="space-y-1">
-                      <p className="text-gray-600">
-                        <a href="tel:+380972158437" className="hover:text-blue-600 transition-colors">
-                          (097) 215-84-37
-                        </a>
-                      </p>
-                      <p className="text-gray-600">
-                        <a href="tel:+380637961403" className="hover:text-blue-600 transition-colors">
-                          (063) 796-14-03
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
+  <div>
+    <h3 className="text-gray-900 mb-2">Телефони</h3>
+
+    {/* Первый номер с WhatsApp и Viber */}
+<div className="flex items-center gap-2 text-gray-600">
+  <a
+    href="tel:+380972158437"
+    className="hover:text-blue-600 transition-colors"
+  >
+    (097) 215-84-37
+  </a>
+
+  <a
+    href="https://wa.me/380972158437"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Написати у WhatsApp"
+    className="inline-flex items-center"
+  >
+    <img
+      src="/brands/whatsapp.png"
+      alt="WhatsApp"
+      className="w-5 h-5 align-middle"
+      loading="lazy"
+    />
+  </a>
+
+  <a
+    href="viber://chat?number=%2B380972158437"
+    title="Написати у Viber"
+    className="inline-flex items-center"
+  >
+    <img
+      src="/brands/viber.png"
+      alt="Viber"
+      className="w-5 h-5 align-middle"
+      loading="lazy"
+    />
+  </a>
+</div>
+
+
+
+    {/* Второй номер без иконок */}
+    <div className="mt-1 text-gray-600">
+      <a href="tel:+380637961403" className="hover:text-blue-600 transition-colors">
+        (063) 796-14-03
+      </a>
+    </div>
+  </div>
+</div>
+
+
 
                 {/* Email */}
                 <div className="flex items-start space-x-4">
@@ -814,21 +874,24 @@ export default function App() {
                 <p className="text-gray-600 mb-6">
                   Приймаємо у Дніпрі та виїжджаємо по всій Дніпропетровській області. Зателефонуйте для безкоштовної консультації щодо незалежної експертної оцінки
                 </p>
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <Button 
-                    size="lg" 
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3"
-                  >
-                    Зателефонувати
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    size="lg" 
-                    className="border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3"
-                  >
-                    Написати email
-                  </Button>
-                </div>
+<div className="flex flex-col sm:flex-row gap-3">
+  <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3">
+    <a href="tel:+380972158437">Зателефонувати</a>
+  </Button>
+
+  <Button asChild variant="outline" size="lg" className="border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3">
+    <a
+      href={
+        "mailto:aiexpert@ua.fm"
+        + "?subject=" + encodeURIComponent("Запит на оцінку автомобіля")
+        + "&body=" + encodeURIComponent("Доброго дня! Мені потрібна консультація щодо оцінки автомобіля.")
+      }
+    >
+      Написати email
+    </a>
+  </Button>
+</div>
+
               </div>
             </div>
 
@@ -874,36 +937,128 @@ export default function App() {
                 Пилипенко А.І. - атестований судовий незалежний автоексперт з 43-річним досвідом. Працюємо у Дніпрі та виїжджаємо по всій Дніпропетровській області. 
                 Офіційні звіти для всіх державних установ і приватних організацій.
               </p>
-              <div className="flex space-x-4">
-                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center">
-                  <Phone className="w-4 h-4 text-gray-400" />
-                </div>
-                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center">
-                  <Mail className="w-4 h-4 text-gray-400" />
-                </div>
-                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center">
-                  <MapPin className="w-4 h-4 text-gray-400" />
-                </div>
-              </div>
+ <div className="flex space-x-4">
+  <a
+    href="tel:+380972158437"
+    className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
+    aria-label="Подзвонити"
+  >
+    <Phone className="w-4 h-4 text-gray-400" />
+  </a>
+
+  <a
+    href={
+      "mailto:aiexpert@ua.fm"
+      + "?subject=" + encodeURIComponent("Запит на оцінку автомобіля")
+    }
+    className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
+    aria-label="Написати email"
+  >
+    <Mail className="w-4 h-4 text-gray-400" />
+  </a>
+
+<a
+  href={mapsHref}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
+  aria-label="Відкрити адресу в Google Maps"
+>
+  <MapPin className="w-4 h-4 text-gray-400" />
+</a>
+
+</div>
+
+              
             </div>
 
             <div>
               <h4 className="text-white mb-4">Послуги</h4>
-              <ul className="space-y-2 text-gray-400 text-sm">
-                <li>Оцінка для митниці</li>
-                <li>Оцінка для МРЕО</li>
-                <li>Судова експертиза</li>
-                <li>Оцінка при розлученні</li>
-                <li>Оцінка при ДТП</li>
-              </ul>
+<ul className="space-y-2 text-gray-400 text-sm">
+  <li>
+    <button
+      onClick={() => scrollToSection('services')}
+      className="hover:text-white transition-colors text-left"
+    >
+      Оцінка для митниці
+    </button>
+  </li>
+  <li>
+    <button
+      onClick={() => scrollToSection('services')}
+      className="hover:text-white transition-colors text-left"
+    >
+      Оцінка для МРЕО
+    </button>
+  </li>
+  <li>
+    <button
+      onClick={() => scrollToSection('services')}
+      className="hover:text-white transition-colors text-left"
+    >
+      Судова експертиза
+    </button>
+  </li>
+  <li>
+    <button
+      onClick={() => scrollToSection('services')}
+      className="hover:text-white transition-colors text-left"
+    >
+      Оцінка при розлученні
+    </button>
+  </li>
+  <li>
+    <button
+      onClick={() => scrollToSection('services')}
+      className="hover:text-white transition-colors text-left"
+    >
+      Оцінка при ДТП
+    </button>
+  </li>
+</ul>
+
             </div>
 
             <div>
               <h4 className="text-white mb-4">Контакти</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li>(097) 215-84-37</li>
-                <li>(063) 796-14-03</li>
-                <li>aiexpert@ua.fm</li>
+<ul className="space-y-2 text-gray-400 text-sm">
+  <li>
+    <a
+      href="tel:+380972158437"
+      className="hover:text-white transition-colors"
+    >
+      (097) 215-84-37
+    </a>
+  </li>
+  <li>
+    <a
+      href="tel:+380637961403"
+      className="hover:text-white transition-colors"
+    >
+      (063) 796-14-03
+    </a>
+  </li>
+  <li>
+    <a
+      href="mailto:aiexpert@ua.fm"
+      className="hover:text-white transition-colors"
+    >
+      aiexpert@ua.fm
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=смт+Слобожанське,+вул.+Нижньодніпровська,+1,+Дніпропетровська+обл."
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-white transition-colors"
+    >
+      смт. Слобожанське, вул. Нижньодніпровська, 1
+    </a>
+  </li>
+</ul>
+
                 <li>м. Дніпро та область</li>
               </ul>
             </div>
