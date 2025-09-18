@@ -532,14 +532,19 @@ export default function App() {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
-            <Button 
-              size="lg" 
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3"
-            >
-              Отримати консультацію
-            </Button>
-          </div>
+<div className="text-center mt-12">
+  <Button
+    asChild
+    size="lg"
+    className="bg-green-600 hover:bg-green-700 text-white px-8 py-3"
+  >
+    <a href="https://wa.me/380972158437" target="_blank" rel="noopener noreferrer">
+      Написати у WhatsApp
+    </a>
+  </Button>
+</div>
+
+
         </div>
       </div>
 
