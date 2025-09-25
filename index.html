@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Оцінка авто Дніпро — незалежний судовий експерт Пилипенко</title>
+    <title>
+      Оцінка авто Дніпро — судовий експерт Пилипенко | ДТП, МРЕО, митниця, суд,
+      нотаріус
+    </title>
     <meta
       name="description"
-      content="Професійна оцінка авто у Дніпрі та визначення збитків при ДТП. Офіційні незалежні висновки для суду, МРЕО, нотаріусів і страхових компаній. 29+ років досвіду."
+      content="Незалежна оцінка авто у Дніпрі: збитки при ДТП, оцінка для МРЕО (СЦ МВС), митниці, суду, нотаріуса, страхових, юр. осіб та обладнання. Офіційні висновки. 29+ років досвіду."
     />
     <meta
       name="keywords"
-      content="оцінка авто Дніпро, оцінка при ДТП Дніпро, судовий автоексперт, експертна оцінка автомобіля"
+      content="оцінка авто Дніпро, оцінка при ДТП, оцінка для МРЕО, оцінка для митниці, судовий автоексперт Дніпро, експертна оцінка для суду, оцінка для нотаріуса, оцінка для страхових, оцінка для юридичних осіб, експертна оцінка обладнання"
     />
     <meta name="author" content="Пилипенко Анатолій Іванович" />
     <meta
@@ -32,8 +35,6 @@
 
     <!-- Canonical -->
     <link rel="canonical" href="https://expert-car-ai.vercel.app/" />
-
-    <!-- Hreflang (залиш один, якщо лише укр) -->
     <link
       rel="alternate"
       href="https://expert-car-ai.vercel.app/"
@@ -45,11 +46,11 @@
     <meta property="og:site_name" content="Судовий автоексперт Дніпро" />
     <meta
       property="og:title"
-      content="Оцінка авто у Дніпрі — незалежний судовий експерт"
+      content="Оцінка авто у Дніпрі — ДТП, МРЕО, митниця, суд, нотаріус"
     />
     <meta
       property="og:description"
-      content="Офіційні висновки та експертні звіти: суд, МРЕО, страхові, нотаріус. Виїзд по області."
+      content="Незалежна експертна оцінка авто: ДТП, МРЕО, митниця, суд, нотаріус, страхові, юр. особи та обладнання. Офіційні висновки, виїзд по області."
     />
     <meta property="og:url" content="https://expert-car-ai.vercel.app/" />
     <meta
@@ -65,20 +66,19 @@
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
-      content="Логотип та заголовок: Оцінка авто Дніпро"
+      content="Оцінка авто Дніпро — судовий автоексперт Пилипенко"
     />
     <meta property="og:locale" content="uk_UA" />
-    <!-- <meta property="og:locale:alternate" content="ru_RU"> -->
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Оцінка авто у Дніпрі — незалежний судовий експерт"
+      content="Оцінка авто Дніпро — ДТП, МРЕО, митниця, суд, нотаріус"
     />
     <meta
       name="twitter:description"
-      content="Професійна незалежна оцінка авто, збитки при ДТП, офіційні експертні звіти. 29+ років досвіду."
+      content="Незалежна оцінка авто у Дніпрі та області. Офіційні експертні висновки для суду, МРЕО, митниці, нотаріусів і страхових компаній."
     />
     <meta
       name="twitter:image"
@@ -92,13 +92,12 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Fonts: CLS-safe -->
+    <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link rel="dns-prefetch" href="//fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Preload + stylesheet (swap) -->
     <link
       rel="preload"
       as="style"
@@ -109,23 +108,19 @@
       rel="stylesheet"
     />
 
-    <!-- Базова типографіка для мінімізації «стрибків» -->
+    <!-- Base CSS -->
     <style>
       :root {
         --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto,
           "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
       }
-      html {
-        text-size-adjust: 100%;
-      }
       body {
         font-family: var(--font-sans);
-        line-height: 1.5; /* стабільна висота рядка */
+        line-height: 1.5;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-rendering: optimizeLegibility;
       }
-      /* Заголовки — без ваги «jump» між системним і Manrope */
       h1,
       h2,
       h3 {
@@ -147,21 +142,107 @@
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Судовий автоексперт Дніпро — Пилипенко Анатолій Іванович",
-        "image": "https://expert-car-ai.vercel.app/og.jpg",
         "url": "https://expert-car-ai.vercel.app/",
+        "image": "https://expert-car-ai.vercel.app/og.jpg",
         "telephone": "+380972158437",
         "email": "aiexpert@ua.fm",
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "смт Слобожанське, вул. Нижньодніпровська, 1",
           "addressLocality": "Дніпро",
           "addressRegion": "Дніпропетровська обл.",
-          "streetAddress": "смт Слобожанське, вул. Нижньодніпровська, 1",
           "postalCode": "52005",
           "addressCountry": "UA"
         },
-        "areaServed": "Дніпро та Дніпропетровська область",
+        "areaServed": ["Дніпро", "Дніпропетровська область"],
         "priceRange": "$$",
-        "description": "Оцінка авто та визначення збитків при ДТП. Офіційні експертні висновки для суду, МРЕО, нотаріусів, страхових компаній."
+        "description": "Незалежна експертна оцінка авто у Дніпрі: ДТП, МРЕО (СЦ МВС), митниця, суд, нотаріус, страхові компанії, податкові та слідчі органи, юридичні особи, оцінка обладнання.",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Послуги експертної оцінки",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Незалежна оцінка авто при ДТП",
+                "description": "Визначення розміру збитку, офіційні експертні висновки для судів та страхових компаній."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Оцінка для МРЕО (сервісні центри МВС)",
+                "description": "Експертна оцінка для реєстрації та оформлення транспортних засобів у СЦ МВС."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Оцінка для митниці",
+                "description": "Визначення ринкової вартості ТЗ, що ввозяться на митну територію України. Висновки приймаються митними органами."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Оцінка для суду",
+                "description": "Судова експертиза у цивільних та кримінальних справах, спадщина, майнові спори."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Оцінка для нотаріуса",
+                "description": "Оцінка для угод купівлі-продажу, дарування, спадщини та поділу майна."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Оцінка для страхових компаній",
+                "description": "Незалежні експертні висновки для врегулювання страхових випадків."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Оцінка для податкових та слідчих органів",
+                "description": "Офіційні висновки експерта для податкових і слідчих органів та адвокатських запитів."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Оцінка для юридичних осіб та компаній",
+                "description": "Професійна оцінка для підприємств і юридичних фірм."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Визначення розміру збитків і пошкоджень авто",
+                "description": "Розрахунок збитку, завданого власнику ТЗ при ДТП та інших пошкодженнях."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Експертна оцінка обладнання",
+                "description": "Оцінка промислового обладнання та товарів з офіційними експертними висновками."
+              }
+            }
+          ]
+        }
       }
     </script>
   </head>
