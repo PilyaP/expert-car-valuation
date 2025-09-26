@@ -15,33 +15,31 @@ const BADGES: { text: string; bg: string; color: string }[] = [
   { text: 'Швидко та якісно', bg: 'bg-purple-100', color: 'text-purple-600' },
 ]
 
+
 function Hero({ onPrimary, onSecondary }: HeroProps) {
   return (
-    <section id="hero" className="bg-gradient-to-br from-slate-50 to-blue-50 pt-20 pb-16">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
-          {/* Text */}
+    <section id="hero" className="bg-gradient-to-br from-slate-50 to-blue-50/60">
+      <div className="container mx-auto max-w-7xl px-4 md:px-6">
+        <div className="grid lg:grid-cols-2 gap-12 items-center pt-3 pb-16">
+          {/* left */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl text-gray-900 leading-tight">
+              <h1 className="text-4xl md:text-5xl xl:text-6xl font-semibold tracking-tight text-gray-900 leading-[1.08] max-w-2xl">
                 Оцінка авто у Дніпрі, визначення збитків при ДТП та оцінка для митниці — офіційні процедури від незалежного експерта
               </h1>
 
-              <h2 className="text-2xl lg:text-3xl text-gray-700 leading-relaxed mb-4">
-                Від атестованого незалежного судового експерта з понад 29-річним досвідом. Офіційні незалежні висновки та експертні оцінки для митниці, МРЕО, суду, нотаріусів, страхових компаній, податкових і слідчих органів, ЗСУ та юридичних фірм.
-              </h2>
-
-              <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-4">
-                Визначення вартості КТЗ і розміру збитку, завданого власнику. Професійна оцінка авто для митниці у Дніпрі та з виїздом по області.
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-2xl">
+                Атестований незалежний судовий експерт з понад 29-річним досвідом. Офіційні висновки для митниці, МРЕО, суду, нотаріусів, страхових компаній, податкових і слідчих органів, ЗСУ та юридичних фірм.
               </p>
 
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-blue-100">
-                <p className="text-blue-700 text-center mb-2">
-                  <span className="text-xl">🔹 Професійна експертна оцінка = справедливе рішення</span>
-                </p>
-                <p className="text-gray-600 text-center">🔹 Експертні незалежні висновки для всіх установ та організацій</p>
-              </div>
-            </div>
+              <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-2xl">
+                Визначення вартості КТЗ і розміру збитку, завданого власнику. Працюємо по Дніпру та з виїздом по області.
+              </p>
+
+              {/* soft card with points */}
+<div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-blue-100"> <p className="text-blue-700 text-center mb-2"> <span className="text-xl">🔹 Професійна експертна оцінка = справедливе рішення</span> </p> <p className="text-gray-600 text-center">🔹 Експертні незалежні висновки для всіх установ та організацій</p> </div> </div>
+
+
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -87,8 +85,8 @@ function Hero({ onPrimary, onSecondary }: HeroProps) {
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1688457462495-1440d81f4ddb?auto=format&fit=crop&w=1080&q=80"
-                alt="Сучасна автомобільна експертиза з цифровими технологіями"
+                src="https://images.unsplash.com/photo-1534953280463-b7b1b04e5fad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXB0b3AlMjBjYXIlMjBhdXRvbW90aXZlJTIwdGVjaG5vbG9neSUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NTg4OTAwNzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                alt="Оцінка Дніпро"
                 className="w-full h-full object-cover"
               />
             </div>
