@@ -19,7 +19,7 @@ type ServicesSectionProps = {
   onServiceClick: (id: string) => void
 }
 
-function ServicesSection({ services, onServiceClick }: ServicesSectionProps) {
+const ServicesSection: React.FC<ServicesSectionProps> = ({ services, onServiceClick }) => {
   return (
     <section id="services" className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-7xl">

@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import Hero from '@/components/Hero'
 import Advantages from '@/components/Advantages'
 import GeoInfo from '@/components/GeoInfo'
@@ -33,13 +33,17 @@ export default function App() {
       window.scrollTo({ top: y, behavior: 'smooth' })
     }
   }, [])
-
+  useEffect(() => {
+    // "instant" чтобы не было ощущения «прыжка в конец»
+    window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior })
+    // если хочется плавно: behavior: 'smooth'
+  }, [currentPage])
   const mapsHref =
     'https://www.google.com/maps/search/?api=1&query=' +
     encodeURIComponent('смт Слобожанське, вул. Нижньодніпровська, 1, Дніпропетровська обл., Україна')
 
-  const handleBackToHome = () => setCurrentPage('home')
-  const handleServiceClick = (id: PageId) => setCurrentPage(id)
+const handleServiceClick = (id: string) => setCurrentPage(id as PageId)
+  const handleBackToHome  = () => setCurrentPage('home')
   const handleContact = () => scrollToSection('contacts')
 
   const pages: Record<PageId, React.ReactElement> = {
@@ -61,7 +65,14 @@ export default function App() {
 
   return (
     <div className="min-h-screen">
-      <NavBar logoSrc={logo} onLinkClick={scrollToSection} />
+      <NavBar
+      logoSrc={logo}
+  onLinkClick={scrollToSection}
+  onLogoClick={() => {
+    setCurrentPage('home')
+    window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior })
+  }}
+/>
 
       {isHome ? (
         <>

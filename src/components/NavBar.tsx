@@ -10,9 +10,9 @@ import type { SectionId } from '@/types/pages'
 interface NavBarProps {
   title?: string
   logoSrc?: string
-  onLinkClick?: (id: SectionId) => void; // ← додали
+  onLinkClick?: (id: SectionId) => void
+  onLogoClick?: () => void       
 }
-
 const LINKS: { label: string; id: string }[] = [
   { label: 'Головна', id: 'hero' },
   { label: 'Послуги', id: 'services' },
@@ -23,6 +23,7 @@ const LINKS: { label: string; id: string }[] = [
 export default function NavBar({
   title = 'Судовий незалежний автоексперт Дніпро',
     logoSrc,
+     onLogoClick,
   onLinkClick,
 }: NavBarProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -39,26 +40,26 @@ const scrollToSection = useCallback((id: string) => {
 
 
   return (
-    <div className="min-h-[4rem]">
-      <nav
-        className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50"
-        role="navigation"
-        aria-label="Головна навігація"
-      >
+<div className="min-h-[4rem]">
+      <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex items-center justify-between h-16">
             {/* Лого + назва */}
-            <div className="flex items-center gap-3">
+            <button
+              type="button"
+              onClick={onLogoClick}                 // ← возврат на home
+              className="flex items-center gap-3 focus:outline-none"
+              aria-label="На головну"
+            >
               <div className="w-12 h-12 rounded-lg overflow-hidden bg-gray-50 border border-gray-200 flex items-center justify-center">
                 {logoSrc ? (
-                  // If you use Next.js Image, replace with <Image src={logoSrc} alt="Логотип" fill className="object-contain"/>
-                  <img src={logoSrc} alt="Логотип судового незалежного автоексперта" className="w-full h-full object-contain" />
+                  <img src={logoSrc} alt="Логотип" className="w-full h-full object-contain" />
                 ) : (
                   <span className="text-sm text-gray-400">Лого</span>
                 )}
               </div>
               <span className="text-base sm:text-lg md:text-xl text-gray-900 font-medium">{title}</span>
-            </div>
+            </button>
 
             {/* Desktop меню */}
             <div className="hidden lg:flex items-center gap-6">
