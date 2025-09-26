@@ -436,220 +436,261 @@ export default function App() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service Cards */}
-             <Card 
-              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
-              onClick={() => handleServiceClick('accident-assessment')}
-            >
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center group-hover:bg-red-200 transition-colors">
-                    <Wrench className="w-6 h-6 text-red-600" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-gray-900 mb-2">Незалежна оцінка авто у Дніпрі при ДТП</h3>
-                    <p className="text-gray-600 text-sm">
-                      Точне визначення розміру збитку при ДТП. Офіційні експертні висновки для судів та страхових компаній
-                    </p>
-                  </div>
-                </div>
-
-                
-              </CardContent>
-            </Card>
-            <Card 
-              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
-              onClick={() => handleServiceClick('court-assessment')}
-            >
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
-                    <Scale className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-gray-900 mb-2">Оцінка для суду (цивільні та кримінальні справи)</h3>
-                    <p className="text-gray-600 text-sm">
-                      Судова експертиза при спадкових справах, майнових спорах та кримінальних провадженнях
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-               <Card 
-              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
-              onClick={() => handleServiceClick('mreo-assessment')}
-            >
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
-                    <Car className="w-6 h-6 text-green-600" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-gray-900 mb-2">Оцінка для МРЕО (сервісних центрів МВС)</h3>
-                    <p className="text-gray-600 text-sm">
-                      Експертна оцінка для реєстрації транспортних засобів у сервісних центрах МВС
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-              <Card 
-              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
-              onClick={() => handleServiceClick('notary-assessment')}
-            >
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center group-hover:bg-red-200 transition-colors">
-                    <Scale className="w-6 h-6 text-red-600" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-gray-900 mb-2">Експертна оцінка для нотаріуса (спадщина, розлучення, угоди)</h3>
-                    <p className="text-gray-600 text-sm">
-                      Нотаріальне оформлення угод купівлі-продажу, дарування та розподілу майна при розлученні
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-                      <Card 
-              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
-              onClick={() => handleServiceClick('insurance-assessment')}
-            >
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center group-hover:bg-rose-200 transition-colors">
-                    <FileText className="w-6 h-6 text-rose-600" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-gray-900 mb-2">Оцінка для страхових компаній</h3>
-                    <p className="text-gray-600 text-sm">
-                      Незалежні експертні висновки для всіх страхових компаній України при врегулюванні збитків
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-                    <Card 
-              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
-              onClick={() => handleServiceClick('tax-investigation-assessment')}
-            >
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors">
-                    <Calculator className="w-6 h-6 text-orange-600" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-gray-900 mb-2">Оцінка для податкових та слідчих органів</h3>
-                    <p className="text-gray-600 text-sm">
-                      Офіційні незалежні висновки експерта для податкових органів, слідчих органів та адвокатських запитів
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-                        <Card 
-              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
-              onClick={() => handleServiceClick('corporate-assessment')}
-            >
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center group-hover:bg-yellow-200 transition-colors">
-                    <Wrench className="w-6 h-6 text-yellow-600" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-gray-900 mb-2">Експертна професійна оцінка для юридичних осіб та компаній</h3>
-                    <p className="text-gray-600 text-sm">
-                      Професійна оцінка для підприємств, юридичних фірм та комерційних організацій
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card 
-              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
-              onClick={() => handleServiceClick('damage-assessment')}
-            >
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center group-hover:bg-indigo-200 transition-colors">
-                    <Package className="w-6 h-6 text-indigo-600" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-gray-900 mb-2">Визначення розміру збитків і пошкоджень авто</h3>
-                    <p className="text-gray-600 text-sm">
-                      Точне визначення розміру збитку, завданого власнику транспортного засобу при ДТП та інших пошкодженнях
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card 
-              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
-              onClick={() => handleServiceClick('purchase-contract')}
-            >
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center group-hover:bg-teal-200 transition-colors">
-                    <Handshake className="w-6 h-6 text-teal-600" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-gray-900 mb-2">Договори купівлі-продажу</h3>
-                    <p className="text-gray-600 text-sm">
-                      Оформлення та експертна підтримка угод купівлі-продажу авто з офіційними висновками експерта
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-               <Card 
-              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
-              onClick={() => handleServiceClick('equipment-assessment')}
-            >
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-200 transition-colors">
-                    <Shield className="w-6 h-6 text-pink-600" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-gray-900 mb-2">Експертна професійна оцінка обладнання</h3>
-                    <p className="text-gray-600 text-sm">
-                      Професійна оцінка промислового обладнання та товарів з офіційними експертними висновками
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card 
-              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
-              onClick={() => handleServiceClick('customs-assessment')}
-            >
-  <CardContent className="p-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 cursor-pointer">
+{/* Service Cards (унифицированные) */}
+<Card className="group border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+  <button
+    type="button"
+    onClick={() => handleServiceClick('accident-assessment')}
+    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleServiceClick('accident-assessment'); } }}
+    className="block w-full text-left p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg cursor-pointer select-none [&_*]:cursor-pointer"
+    aria-label="Незалежна оцінка авто у Дніпрі при ДТП — детальніше"
+  >
     <div className="flex items-start space-x-4">
-      <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors">
-                    <CarFront className="w-6 h-6 text-red-600" />
+      <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center transition-colors group-hover:bg-red-200">
+        <Wrench className="w-6 h-6 text-red-600" />
       </div>
       <div className="flex-1">
-        <h3 className="text-gray-900 mb-2">
-          Оцінка для митниці
-        </h3>
-        <p className="text-gray-600 text-sm">
-                    Визначення ринкової вартості транспортних засобів, що ввозяться на митну територію України. 
-          Офіційні експертні висновки, які приймають митні органи.
-        </p>
+        <h3 className="text-gray-900 mb-2">Незалежна оцінка авто у Дніпрі при ДТП</h3>
+        <p className="text-gray-600 text-sm">Точне визначення розміру збитку при ДТП. Офіційні експертні висновки для судів та страхових компаній</p>
+        <span className="mt-4 inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-700">Детальніше
+          <svg className="ml-1 h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M12.293 4.293a1 1 0 011.414 0L18 8.586a1 1 0 010 1.414l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 10H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
+        </span>
       </div>
     </div>
-  </CardContent>
+  </button>
 </Card>
+
+<Card className="group border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+  <button
+    type="button"
+    onClick={() => handleServiceClick('court-assessment')}
+    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleServiceClick('court-assessment'); } }}
+    className="block w-full text-left p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg cursor-pointer select-none [&_*]:cursor-pointer"
+    aria-label="Оцінка для суду — детальніше"
+  >
+    <div className="flex items-start space-x-4">
+      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center transition-colors group-hover:bg-blue-200">
+        <Scale className="w-6 h-6 text-blue-600" />
+      </div>
+      <div className="flex-1">
+        <h3 className="text-gray-900 mb-2">Оцінка для суду (цивільні та кримінальні справи)</h3>
+        <p className="text-gray-600 text-sm">Судова експертиза при спадкових справах, майнових спорах та кримінальних провадженнях</p>
+        <span className="mt-4 inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-700">Детальніше
+          <svg className="ml-1 h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M12.293 4.293a1 1 0 011.414 0L18 8.586a1 1 0 010 1.414l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 10H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
+        </span>
+      </div>
+    </div>
+  </button>
+</Card>
+
+<Card className="group border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+  <button
+    type="button"
+    onClick={() => handleServiceClick('mreo-assessment')}
+    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleServiceClick('mreo-assessment'); } }}
+    className="block w-full text-left p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg cursor-pointer select-none [&_*]:cursor-pointer"
+    aria-label="Оцінка для МРЕО — детальніше"
+  >
+    <div className="flex items-start space-x-4">
+      <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center transition-colors group-hover:bg-green-200">
+        <Car className="w-6 h-6 text-green-600" />
+      </div>
+      <div className="flex-1">
+        <h3 className="text-gray-900 mb-2">Оцінка для МРЕО (сервісних центрів МВС)</h3>
+        <p className="text-gray-600 text-sm">Експертна оцінка для реєстрації транспортних засобів у сервісних центрах МВС</p>
+        <span className="mt-4 inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-700">Детальніше
+          <svg className="ml-1 h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M12.293 4.293a1 1 0 011.414 0L18 8.586a1 1 0 010 1.414l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 10H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
+        </span>
+      </div>
+    </div>
+  </button>
+</Card>
+
+<Card className="group border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+  <button
+    type="button"
+    onClick={() => handleServiceClick('notary-assessment')}
+    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleServiceClick('notary-assessment'); } }}
+    className="block w-full text-left p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg cursor-pointer select-none [&_*]:cursor-pointer"
+    aria-label="Експертна оцінка для нотаріуса — детальніше"
+  >
+    <div className="flex items-start space-x-4">
+      <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center transition-colors group-hover:bg-red-200">
+        <Scale className="w-6 h-6 text-red-600" />
+      </div>
+      <div className="flex-1">
+        <h3 className="text-gray-900 mb-2">Експертна оцінка для нотаріуса (спадщина, розлучення, угоди)</h3>
+        <p className="text-gray-600 text-sm">Нотаріальне оформлення угод купівлі-продажу, дарування та розподілу майна при розлученні</p>
+        <span className="mt-4 inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-700">Детальніше
+          <svg className="ml-1 h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M12.293 4.293a1 1 0 011.414 0L18 8.586a1 1 0 010 1.414l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 10H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
+        </span>
+      </div>
+    </div>
+  </button>
+</Card>
+
+<Card className="group border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+  <button
+    type="button"
+    onClick={() => handleServiceClick('insurance-assessment')}
+    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleServiceClick('insurance-assessment'); } }}
+    className="block w-full text-left p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg cursor-pointer select-none [&_*]:cursor-pointer"
+    aria-label="Оцінка для страхових компаній — детальніше"
+  >
+    <div className="flex items-start space-x-4">
+      <div className="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center transition-colors group-hover:bg-rose-200">
+        <FileText className="w-6 h-6 text-rose-600" />
+      </div>
+      <div className="flex-1">
+        <h3 className="text-gray-900 mb-2">Оцінка для страхових компаній</h3>
+        <p className="text-gray-600 text-sm">Незалежні експертні висновки для всіх страхових компаній України при врегулюванні збитків</p>
+        <span className="mt-4 inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-700">Детальніше
+          <svg className="ml-1 h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M12.293 4.293a1 1 0 011.414 0L18 8.586a1 1 0 010 1.414l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 10H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
+        </span>
+      </div>
+    </div>
+  </button>
+</Card>
+
+<Card className="group border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+  <button
+    type="button"
+    onClick={() => handleServiceClick('tax-investigation-assessment')}
+    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleServiceClick('tax-investigation-assessment'); } }}
+    className="block w-full text-left p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg cursor-pointer select-none [&_*]:cursor-pointer"
+    aria-label="Оцінка для податкових та слідчих органів — детальніше"
+  >
+    <div className="flex items-start space-x-4">
+      <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center transition-colors group-hover:bg-orange-200">
+        <Calculator className="w-6 h-6 text-orange-600" />
+      </div>
+      <div className="flex-1">
+        <h3 className="text-gray-900 mb-2">Оцінка для податкових та слідчих органів</h3>
+        <p className="text-gray-600 text-sm">Офіційні незалежні висновки експерта для податкових органів, слідчих органів та адвокатських запитів</p>
+        <span className="mt-4 inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-700">Детальніше
+          <svg className="ml-1 h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M12.293 4.293a1 1 0 011.414 0L18 8.586a1 1 0 010 1.414l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 10H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
+        </span>
+      </div>
+    </div>
+  </button>
+</Card>
+
+<Card className="group border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+  <button
+    type="button"
+    onClick={() => handleServiceClick('corporate-assessment')}
+    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleServiceClick('corporate-assessment'); } }}
+    className="block w-full text-left p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg cursor-pointer select-none [&_*]:cursor-pointer"
+    aria-label="Експертна професійна оцінка для юридичних осіб — детальніше"
+  >
+    <div className="flex items-start space-x-4">
+      <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center transition-colors group-hover:bg-yellow-200">
+        <Wrench className="w-6 h-6 text-yellow-600" />
+      </div>
+      <div className="flex-1">
+        <h3 className="text-gray-900 mb-2">Експертна професійна оцінка для юридичних осіб та компаній</h3>
+        <p className="text-gray-600 text-sm">Професійна оцінка для підприємств, юридичних фірм та комерційних організацій</p>
+        <span className="mt-4 inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-700">Детальніше
+          <svg className="ml-1 h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M12.293 4.293a1 1 0 011.414 0L18 8.586a1 1 0 010 1.414l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 10H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
+        </span>
+      </div>
+    </div>
+  </button>
+</Card>
+
+<Card className="group border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+  <button
+    type="button"
+    onClick={() => handleServiceClick('damage-assessment')}
+    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleServiceClick('damage-assessment'); } }}
+    className="block w-full text-left p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg cursor-pointer select-none [&_*]:cursor-pointer"
+    aria-label="Визначення розміру збитків і пошкоджень авто — детальніше"
+  >
+    <div className="flex items-start space-x-4">
+      <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center transition-colors group-hover:bg-indigo-200">
+        <Package className="w-6 h-6 text-indigo-600" />
+      </div>
+      <div className="flex-1">
+        <h3 className="text-gray-900 mb-2">Визначення розміру збитків і пошкоджень авто</h3>
+        <p className="text-gray-600 text-sm">Точне визначення розміру збитку, завданого власнику транспортного засобу при ДТП та інших пошкодженнях</p>
+        <span className="mt-4 inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-700">Детальніше
+          <svg className="ml-1 h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M12.293 4.293a1 1 0 011.414 0L18 8.586a1 1 0 010 1.414l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 10H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
+        </span>
+      </div>
+    </div>
+  </button>
+</Card>
+
+<Card className="group border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+  <button
+    type="button"
+    onClick={() => handleServiceClick('purchase-contract')}
+    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleServiceClick('purchase-contract'); } }}
+    className="block w-full text-left p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg cursor-pointer select-none [&_*]:cursor-pointer"
+    aria-label="Договори купівлі-продажу — детальніше"
+  >
+    <div className="flex items-start space-x-4">
+      <div className="w-12 h-12 bg-teал-100 rounded-lg flex items-center justify-center transition-colors group-hover:bg-teal-200">
+        <Handshake className="w-6 h-6 text-teал-600" />
+      </div>
+      <div className="flex-1">
+        <h3 className="text-gray-900 mb-2">Договори купівлі-продажу</h3>
+        <p className="text-gray-600 text-sm">Оформлення та експертна підтримка угод купівлі-продажу авто з офіційними висновками експерта</p>
+        <span className="mt-4 inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-700">Детальніше
+          <svg className="ml-1 h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M12.293 4.293a1 1 0 011.414 0L18 8.586a1 1 0 010 1.414l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 10H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
+        </span>
+      </div>
+    </div>
+  </button>
+</Card>
+
+<Card className="group border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+  <button
+    type="button"
+    onClick={() => handleServiceClick('equipment-assessment')}
+    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleServiceClick('equipment-assessment'); } }}
+    className="block w-full text-left p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg cursor-pointer select-none [&_*]:cursor-pointer"
+    aria-label="Експертна професійна оцінка обладнання — детальніше"
+  >
+    <div className="flex items-start space-x-4">
+      <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center transition-colors group-hover:bg-pink-200">
+        <Shield className="w-6 h-6 text-pink-600" />
+      </div>
+      <div className="flex-1">
+        <h3 className="text-gray-900 mb-2">Експертна професійна оцінка обладнання</h3>
+        <p className="text-gray-600 text-sm">Професійна оцінка промислового обладнання та товарів з офіційними експертними висновками</p>
+        <span className="mt-4 inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-700">Детальніше
+          <svg className="ml-1 h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M12.293 4.293a1 1 0 011.414 0L18 8.586a1 1 0 010 1.414l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 10H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
+        </span>
+      </div>
+    </div>
+  </button>
+</Card>
+
+<Card className="group border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+  <button
+    type="button"
+    onClick={() => handleServiceClick('customs-assessment')}
+    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleServiceClick('customs-assessment'); } }}
+    className="block w-full text-left p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg cursor-pointer select-none [&_*]:cursor-pointer"
+    aria-label="Оцінка для митниці — детальніше"
+  >
+    <div className="flex items-start space-x-4">
+      <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center transition-colors group-hover:bg-orange-200">
+        <CarFront className="w-6 h-6 text-red-600" />
+      </div>
+      <div className="flex-1">
+        <h3 className="text-gray-900 mb-2">Оцінка для митниці</h3>
+        <p className="text-gray-600 text-sm">Визначення ринкової вартості транспортних засобів, що ввозяться на митну територію України. Офіційні експертні висновки, які приймають митні органи.</p>
+        <span className="mt-4 inline-flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-700">Детальніше
+          <svg className="ml-1 h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M12.293 4.293a1 1 0 011.414 0L18 8.586a1 1 0 010 1.414l-4.293 4.293a1 1 0 01-1.414-1.414L14.586 10H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
+        </span>
+      </div>
+    </div>
+  </button>
+</Card>
+
 
 
 
