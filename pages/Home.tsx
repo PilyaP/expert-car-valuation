@@ -22,7 +22,7 @@ import DamageAssessment from '@/components/services/DamageAssessment'
 import PurchaseContract from '@/components/services/PurchaseContract'
 import EquipmentAssessment from '@/components/services/EquipmentAssessment'
 import CustomsAssessment from '@/components/services/CustomsAssessment'
-import logo from '.././dist/assets/logo-M3pJQtn_.png'
+import logo from '@/assets/logo.png'
 export default function App() {
   const [currentPage, setCurrentPage] = useState<'home' | PageId>('home')
 

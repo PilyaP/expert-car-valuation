@@ -1,3 +1,4 @@
+// src/types/pages.ts
 export type PageId =
   | 'accident-assessment'
   | 'court-assessment'
@@ -9,7 +10,7 @@ export type PageId =
   | 'damage-assessment'
   | 'purchase-contract'
   | 'equipment-assessment'
-  | 'customs-assessment';
+  | 'customs-assessment'
 
-// корисно і для навігації по секціях
-export type SectionId = 'hero' | 'services' | 'expert' | 'contacts';
+// Для навігації по секціях (NavBar, скрол)
+export type SectionId = 'hero' | 'services' | 'expert' | 'contacts'
