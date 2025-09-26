@@ -29,12 +29,23 @@ const mapsHref =
   "https://www.google.com/maps/search/?api=1&query=" +
   encodeURIComponent("смт Слобожанське, вул. Нижньодніпровська, 1, Дніпропетровська обл., Україна");
 
-
-
+// Import service components
+import AccidentAssessment from './components/services/AccidentAssessment';
+import CourtAssessment from './components/services/CourtAssessment';
+import MreoAssessment from './components/services/MreoAssessment';
+import NotaryAssessment from './components/services/NotaryAssessment';
+import InsuranceAssessment from './components/services/InsuranceAssessment';
+import TaxInvestigationAssessment from './components/services/TaxInvestigationAssessment';
+import CorporateAssessment from './components/services/CorporateAssessment';
+import DamageAssessment from './components/services/DamageAssessment';
+import PurchaseContract from './components/services/PurchaseContract';
+import EquipmentAssessment from './components/services/EquipmentAssessment';
+import CustomsAssessment from './components/services/CustomsAssessment';
 
 
 export default function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState('home');
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -43,6 +54,60 @@ export default function App() {
     }
     setIsMobileMenuOpen(false);
   };
+
+  const handleServiceClick = (serviceName: string) => {
+    setCurrentPage(serviceName);
+    window.scrollTo(0, 0);
+  };
+
+  const handleBackToHome = () => {
+    setCurrentPage('home');
+  };
+
+  // Service page routing
+  if (currentPage === 'accident-assessment') {
+    return <AccidentAssessment onBack={handleBackToHome} />;
+  }
+  
+  if (currentPage === 'court-assessment') {
+    return <CourtAssessment onBack={handleBackToHome} />;
+  }
+  
+  if (currentPage === 'mreo-assessment') {
+    return <MreoAssessment onBack={handleBackToHome} />;
+  }
+  
+  if (currentPage === 'notary-assessment') {
+    return <NotaryAssessment onBack={handleBackToHome} />;
+  }
+  
+  if (currentPage === 'insurance-assessment') {
+    return <InsuranceAssessment onBack={handleBackToHome} />;
+  }
+  
+  if (currentPage === 'tax-investigation-assessment') {
+    return <TaxInvestigationAssessment onBack={handleBackToHome} />;
+  }
+  
+  if (currentPage === 'corporate-assessment') {
+    return <CorporateAssessment onBack={handleBackToHome} />;
+  }
+  
+  if (currentPage === 'damage-assessment') {
+    return <DamageAssessment onBack={handleBackToHome} />;
+  }
+  
+  if (currentPage === 'purchase-contract') {
+    return <PurchaseContract onBack={handleBackToHome} />;
+  }
+  
+  if (currentPage === 'equipment-assessment') {
+    return <EquipmentAssessment onBack={handleBackToHome} />;
+  }
+  
+  if (currentPage === 'customs-assessment') {
+    return <CustomsAssessment onBack={handleBackToHome} />;
+  }
 
   return (
     <div className="min-h-screen">
@@ -240,8 +305,8 @@ export default function App() {
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1695230981824-8edd894a6c2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBhcHByYWlzYWwlMjBleHBlcnQlMjBwcm9mZXNzaW9uYWx8ZW58MXx8fHwxNzU3MTUzNTI5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Професійна оцінка автомобіля експертом"
+                src="https://images.unsplash.com/photo-1688457462495-1440d81f4ddb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwZXhwZXJ0JTIwZGlnaXRhbCUyMHRhYmxldCUyMG1vZGVybnxlbnwxfHx8fDE3NTg4NDI4Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                alt="Сучасна автомобільна експертиза з цифровими технологіями"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -373,7 +438,10 @@ export default function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service Cards */}
-            <Card className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
+             <Card 
+              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
+              onClick={() => handleServiceClick('accident-assessment')}
+            >
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center group-hover:bg-red-200 transition-colors">
@@ -386,10 +454,14 @@ export default function App() {
                     </p>
                   </div>
                 </div>
+
+                
               </CardContent>
             </Card>
-
-            <Card className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
+            <Card 
+              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
+              onClick={() => handleServiceClick('court-assessment')}
+            >
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
@@ -405,7 +477,10 @@ export default function App() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
+               <Card 
+              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
+              onClick={() => handleServiceClick('mreo-assessment')}
+            >
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
@@ -421,7 +496,10 @@ export default function App() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
+              <Card 
+              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
+              onClick={() => handleServiceClick('notary-assessment')}
+            >
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center group-hover:bg-red-200 transition-colors">
@@ -437,7 +515,10 @@ export default function App() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
+                      <Card 
+              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
+              onClick={() => handleServiceClick('insurance-assessment')}
+            >
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center group-hover:bg-rose-200 transition-colors">
@@ -453,7 +534,10 @@ export default function App() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
+                    <Card 
+              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
+              onClick={() => handleServiceClick('tax-investigation-assessment')}
+            >
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors">
@@ -469,7 +553,10 @@ export default function App() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
+                        <Card 
+              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
+              onClick={() => handleServiceClick('corporate-assessment')}
+            >
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center group-hover:bg-yellow-200 transition-colors">
@@ -485,7 +572,10 @@ export default function App() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
+            <Card 
+              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
+              onClick={() => handleServiceClick('damage-assessment')}
+            >
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center group-hover:bg-indigo-200 transition-colors">
@@ -501,7 +591,10 @@ export default function App() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
+            <Card 
+              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
+              onClick={() => handleServiceClick('purchase-contract')}
+            >
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center group-hover:bg-teal-200 transition-colors">
@@ -517,7 +610,10 @@ export default function App() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
+               <Card 
+              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
+              onClick={() => handleServiceClick('equipment-assessment')}
+            >
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-200 transition-colors">
@@ -533,7 +629,10 @@ export default function App() {
               </CardContent>
             </Card>
 
-<Card className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
+            <Card 
+              className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300 cursor-pointer"
+              onClick={() => handleServiceClick('customs-assessment')}
+            >
   <CardContent className="p-6">
     <div className="flex items-start space-x-4">
       <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors">
