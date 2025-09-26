@@ -115,33 +115,36 @@ function ContactsSection({ mapsHref }: ContactsSectionProps) {
             </div>
           </div>
 
-          {/* Map */}
-          <div className="relative">
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-gray-200">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.8744!2d35.0836!3d48.4647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2f0f0f0f0f0%3A0x0!2z0KHQu9C-0LHQvtC20LDQvdGB0YzQutC1!5e0!3m2!1suk!2sua!4v1234567890"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Мапа розташування офісу експерта"
-              ></iframe>
-            </div>
+{/* Map */}
+<div className="relative">
+  <div className="w-full rounded-2xl overflow-hidden shadow-lg border border-gray-200"
+       style={{ height: 460 }}>  {/* ← будь-яка висота: 380/460/520 px */}
+    <iframe
+      className="w-full h-full block"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.8744!2d35.0836!3d48.4647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2f0f0f0f0f0%3A0x0!2z0KHQu9C-0LHQvtC20LDQvdGB0YzQutC1!5e0!3m2!1suk!2sua!4v1234567890"
+      loading="lazy"
+      allowFullScreen
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Мапа розташування офісу експерта"
+      style={{ border: 0 }}
+    />
+  </div>
 
-            <div className="absolute top-4 left-4 bg-white rounded-lg shadow-lg p-4 border border-gray-100 max-w-sm">
-              <div className="flex items-center space-x-3">
-                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-                  <MapPin className="w-4 h-4 text-white" />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-900">Судовий незалежний експерт Дніпро</p>
-                  <p className="text-xs text-gray-500">Виїзди по області</p>
-                </div>
-              </div>
-            </div>
-          </div>
+  {/* плашка поверх карти */}
+  <div className="absolute top-4 left-4 bg-white rounded-lg shadow-lg p-4 border border-gray-100 max-w-sm">
+    <div className="flex items-center space-x-3">
+      <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+        <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none"><path d="M12 21s-6-5.686-6-10a6 6 0 1112 0c0 4.314-6 10-6 10z" stroke="currentColor" strokeWidth="2"/></svg>
+      </div>
+      <div>
+        <p className="text-sm text-gray-900">Судовий незалежний експерт Дніпро</p>
+        <p className="text-xs text-gray-500">Виїзди по області</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
         </div>
       </div>
     </section>
