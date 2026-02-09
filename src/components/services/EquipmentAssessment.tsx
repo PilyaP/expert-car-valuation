@@ -311,17 +311,18 @@ export default function EquipmentAssessment({ onBack }) {
         </a>
       </Button>
 
-      <Button
-        asChild
-        variant="outline"
-        size="lg"
-        className="border-white text-white hover:bg-white/10 px-8 py-3 font-medium"
-      >
-        <a href="mailto:aiexpert@ua.fm">
-          <Mail className="w-5 h-5 mr-2" />
-          Написати на email
-        </a>
-      </Button>
+<Button
+  asChild
+  variant="outline"
+  size="lg"
+  className="border-white bg-transparent text-white hover:bg-white/10 px-8 py-3 font-medium"
+>
+  <a href="mailto:aiexpert@ua.fm" className="flex items-center">
+    <Mail className="w-5 h-5 mr-2 !text-white" />
+    Написати на email
+  </a>
+</Button>
+
     </div>
   </div>
 </section>
