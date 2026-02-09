@@ -92,7 +92,8 @@ function ExpertSection() {
                 variant="outline"
                 size="lg"
                 className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3"
-                onClick={() => window.open('/certificate-22.jpg', '_blank')}
+               onClick={() => window.open('/certificates/certificate-22.jpg', '_blank')}
+
               >
                 Переглянути сертифікати
               </Button>
