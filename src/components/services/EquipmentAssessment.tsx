@@ -67,11 +67,11 @@ export default function EquipmentAssessment({ onBack }) {
 
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1558618666-fc6a2df0e2d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwZXF1aXBtZW50JTIwbWFjaGluZXJ5fGVufDF8fHx8MTc1NzE1Nzg5MHww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Професійна оцінка промислового обладнання"
-                  className="w-full h-full object-cover"
-                />
+<ImageWithFallback
+  src="https://tse4.mm.bing.net/th/id/OIP.nVYgmUjfM5AkuY_Lo9_WsgHaFO?pid=Api"
+  alt="(Challenger, MT800)"
+  className="w-full h-full object-cover"
+/>
               </div>
             </div>
           </div>
