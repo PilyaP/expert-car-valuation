@@ -238,83 +238,93 @@ export default function EquipmentAssessment({ onBack }) {
         </div>
       </div>
 
-      {/* Process */}
-      <div className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl text-gray-900 mb-4">
-              Процес оцінки обладнання
-            </h2>
-            <p className="text-lg text-gray-600">
-              Комплексний підхід для точного визначення вартості
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-pink-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-xl">1</span>
-              </div>
-              <h3 className="text-gray-900 mb-2">Заявка</h3>
-              <p className="text-gray-600 text-sm">
-                Подача заявки з описом обладнання та цілі оцінки
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-pink-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-xl">2</span>
-              </div>
-              <h3 className="text-gray-900 mb-2">Огляд</h3>
-              <p className="text-gray-600 text-sm">
-                Виїзд експерта та детальний технічний огляд
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-pink-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-xl">3</span>
-              </div>
-              <h3 className="text-gray-900 mb-2">Аналіз</h3>
-              <p className="text-gray-600 text-sm">
-                Аналіз ринку та розрахунок справедливої вартості
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-pink-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-xl">4</span>
-              </div>
-              <h3 className="text-gray-900 mb-2">Звіт</h3>
-              <p className="text-gray-600 text-sm">
-                Офіційний експертний акт з висновками
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* CTA Section */}
-      <div className="py-16 bg-gradient-to-br from-pink-600 to-purple-600 text-white">
-        <div className="container mx-auto px-4 max-w-7xl text-center">
-          <h2 className="text-3xl mb-4">
-            Потрібна оцінка обладнання?
-          </h2>
-          <p className="text-xl mb-8 text-pink-100">
-            Зв'яжіться з нами для безкоштовної консультації
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-pink-600 hover:bg-gray-100 px-8 py-3">
-              <Phone className="w-5 h-5 mr-2" />
-              Зателефонувати зараз
-            </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 px-8 py-3">
-              <Mail className="w-5 h-5 mr-2" />
-              Написати email
-            </Button>
-          </div>
-        </div>
-      </div>
+{/* Process */}
+<section className="py-16 bg-white">
+  <div className="container mx-auto px-4 max-w-7xl">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-semibold text-gray-900 mb-4">
+        Процес оцінки обладнання
+      </h2>
+      <p className="text-lg text-gray-600">
+        Комплексний підхід для точного визначення вартості
+      </p>
     </div>
-  );
+
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+      {/* line on desktop */}
+      <div className="hidden md:block absolute top-8 left-8 right-8 h-px bg-gray-200" />
+
+      {[
+        {
+          step: '1',
+          title: 'Заявка',
+          text: 'Подача заявки з описом обладнання та мети оцінки',
+        },
+        {
+          step: '2',
+          title: 'Огляд',
+          text: 'Виїзд експерта та детальний технічний огляд',
+        },
+        {
+          step: '3',
+          title: 'Аналіз',
+          text: 'Аналіз ринку та розрахунок справедливої вартості',
+        },
+        {
+          step: '4',
+          title: 'Звіт',
+          text: 'Офіційний експертний звіт (акт) з висновками',
+        },
+      ].map((item) => (
+        <div key={item.step} className="text-center relative">
+          <div className="w-16 h-16 bg-pink-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+            <span className="text-xl font-semibold">{item.step}</span>
+          </div>
+          <h3 className="text-gray-900 font-medium mb-2">{item.title}</h3>
+          <p className="text-gray-600 text-sm leading-relaxed">{item.text}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+{/* CTA Section */}
+<section className="py-20 bg-gradient-to-br from-pink-600 via-pink-500 to-purple-600">
+  <div className="container mx-auto px-4 max-w-5xl text-center text-white">
+    <h2 className="text-3xl sm:text-4xl font-semibold mb-4">
+      Потрібна оцінка обладнання?
+    </h2>
+
+    <p className="text-lg sm:text-xl mb-10 text-white/90">
+      Звʼяжіться з нами для безкоштовної консультації
+    </p>
+
+    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <Button
+        asChild
+        size="lg"
+        className="bg-white text-pink-600 hover:bg-white/90 px-8 py-3 font-medium shadow-md"
+      >
+        <a href="tel:+380972158437">
+          <Phone className="w-5 h-5 mr-2" />
+          Зателефонувати
+        </a>
+      </Button>
+
+      <Button
+        asChild
+        variant="outline"
+        size="lg"
+        className="border-white text-white hover:bg-white/10 px-8 py-3 font-medium"
+      >
+        <a href="mailto:aiexpert@ua.fm">
+          <Mail className="w-5 h-5 mr-2" />
+          Написати на email
+        </a>
+      </Button>
+    </div>
+  </div>
+</section>
+    </div>
+  )
 }
