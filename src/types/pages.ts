@@ -11,6 +11,6 @@ export type PageId =
   | 'purchase-contract'
   | 'equipment-assessment'
   | 'customs-assessment'
-
+  | 'vin-decoding-customs-court'
 // Для навігації по секціях (NavBar, скрол)
 export type SectionId = 'hero' | 'services' | 'expert' | 'contacts'

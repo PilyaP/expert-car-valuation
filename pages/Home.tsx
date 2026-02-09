@@ -22,6 +22,10 @@ import DamageAssessment from '@/components/services/DamageAssessment'
 import PurchaseContract from '@/components/services/PurchaseContract'
 import EquipmentAssessment from '@/components/services/EquipmentAssessment'
 import CustomsAssessment from '@/components/services/CustomsAssessment'
+import VinDecodingCustomsCourt from "@/components/services/VinDecodingCustomsCourt";
+
+
+
 import logo from '@/assets/logo.png'
 export default function App() {
   const [currentPage, setCurrentPage] = useState<'home' | PageId>('home')
@@ -58,6 +62,7 @@ const handleServiceClick = (id: string) => setCurrentPage(id as PageId)
     'purchase-contract': <PurchaseContract onBack={handleBackToHome} onContact={handleContact} />,
     'equipment-assessment': <EquipmentAssessment onBack={handleBackToHome} onContact={handleContact} />,
     'customs-assessment': <CustomsAssessment onBack={handleBackToHome} onContact={handleContact} />,
+    'vin-decoding-customs-court': <VinDecodingCustomsCourt onBack={handleBackToHome} onContact={handleContact} />,
   }
 
   const isHome = currentPage === 'home'

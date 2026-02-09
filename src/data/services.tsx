@@ -2,6 +2,7 @@
 import type React from 'react'
 import type { PageId } from '@/types/pages'
 import {
+ 
   Wrench,
   Scale,
   Car,
@@ -45,7 +46,7 @@ export const services = [
     ariaLabel: 'Оцінка для суду — детальніше',
   },
   {
-    id: 'mreo-assessment',
+    id: '==',
     title: 'Оцінка для МРЕО (сервісних центрів МВС)',
     desc:
       'Експертна оцінка для реєстрації транспортних засобів у сервісних центрах МВС',
@@ -137,4 +138,15 @@ export const services = [
     ariaLabel:
       'Експертна професійна оцінка для юридичних осіб — детальніше',
   },
+{
+  id: 'vin-decoding-customs-court',
+  title: 'Розшифрування VIN для митниці та суду',
+  desc:
+    'Професійне розшифрування VIN-коду з підтвердженням ідентифікаційних та технічних даних транспортного засобу для офіційних процедур.',
+  icon: <Car className="w-6 h-6 text-yellow-600" />,
+  iconBg: 'bg-blue-100',
+  iconHoverBg: 'group-hover:bg-orange-200',
+  ariaLabel: 'Розшифрування VIN для митниці та суду — детальніше',
+},
+
 ] satisfies ServiceCardData[]

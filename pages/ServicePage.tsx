@@ -12,6 +12,7 @@ import DamageAssessment from "@/components/services/DamageAssessment";
 import PurchaseContract from "@/components/services/PurchaseContract";
 import EquipmentAssessment from "@/components/services/EquipmentAssessment";
 import CustomsAssessment from "@/components/services/CustomsAssessment";
+import VinDecodingCustomsCourt from "@/components/services/VinDecodingCustomsCourt";
 
 const map: Record<string, React.ReactNode> = {
   "accident-assessment": <AccidentAssessment />,
@@ -25,6 +26,8 @@ const map: Record<string, React.ReactNode> = {
   "purchase-contract": <PurchaseContract />,
   "equipment-assessment": <EquipmentAssessment />,
   "customs-assessment": <CustomsAssessment />,
+  "vin-decoding-customs-court": <VinDecodingCustomsCourt />,
+
 };
 
 export default function ServicePage() {
