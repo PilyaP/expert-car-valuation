@@ -1,6 +1,4 @@
-@import "tailwindcss";
-
-
+/* @import "tailwindcss";
 
 @layer properties {
   @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or
@@ -226,7 +224,7 @@
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       "Noto Color Emoji"
-    );
+    );====
     font-feature-settings: var(--default-font-feature-settings, normal);
     font-variation-settings: var(--default-font-variation-settings, normal);
     -webkit-tap-highlight-color: transparent;
@@ -5773,5 +5771,47 @@ html {
   20%,
   50% {
     opacity: 0;
+  }
+} */
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+.imageWrap img {
+  width: 100%;
+  height: 100%;
+}
+.button {
+  cursor: pointer;
+}
+@layer base {
+  a[href] {
+    cursor: pointer;
+  }
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+  [role="button"]:not([aria-disabled="true"]) {
+    cursor: pointer;
   }
 }

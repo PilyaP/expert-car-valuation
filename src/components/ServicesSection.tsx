@@ -2,7 +2,7 @@
 
 import React, { memo } from 'react'
 import { Button } from '@/components/ui/button'
-import { ChevronRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 export type ServiceItem = {
   id: string
@@ -16,10 +16,9 @@ export type ServiceItem = {
 
 type ServicesSectionProps = {
   services: ServiceItem[]
-  onServiceClick: (id: string) => void
 }
 
-const ServicesSection: React.FC<ServicesSectionProps> = ({ services, onServiceClick }) => {
+const ServicesSection: React.FC<ServicesSectionProps> = ({ services }) => {
   return (
     <section id="services" className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-7xl">
@@ -32,27 +31,28 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ services, onServiceCl
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((s) => (
-            <div key={s.id} className="group">
-<button
-  key={s.id}
-  className="group text-left h-full"
-  aria-label={s.ariaLabel}
-  onClick={() => onServiceClick(s.id)}
->
-  <div className="h-full flex flex-col rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow bg-white">
-    <div>
-      <div className={`w-12 h-12 ${s.iconBg ?? 'bg-blue-50'} rounded-lg flex items-center justify-center mb-4`}>
-        {s.icon}
-      </div>
-      <h3 className="text-gray-900 mb-2">{s.title}</h3>
-      <p className="text-gray-600 text-sm">{s.desc}</p>
-    </div>
-    <div className="mt-4">
-      <span className="text-blue-600 font-medium group-hover:underline">Детальніше →</span>
-    </div>
-  </div>
-</button>
-            </div>
+            <Link
+              key={s.id}
+              to={`/service/${s.id}`}
+              aria-label={s.ariaLabel ?? `Детальніше: ${s.title}`}
+              className="group block text-left h-full"
+            >
+              <div className="h-full flex flex-col rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow bg-white">
+                {/* Важно: внутренности pointer-events-none, чтобы никакие слои не ломали клик */}
+                <div className="pointer-events-none">
+                  <div className={`w-12 h-12 ${s.iconBg ?? 'bg-blue-50'} rounded-lg flex items-center justify-center mb-4`}>
+                    {s.icon}
+                  </div>
+
+                  <h3 className="text-gray-900 mb-2">{s.title}</h3>
+                  <p className="text-gray-600 text-sm">{s.desc}</p>
+
+                  <div className="mt-4">
+                    <span className="text-blue-600 font-medium group-hover:underline">Детальніше →</span>
+                  </div>
+                </div>
+              </div>
+            </Link>
           ))}
         </div>
 

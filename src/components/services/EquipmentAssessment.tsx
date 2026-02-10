@@ -70,7 +70,7 @@ export default function EquipmentAssessment({ onBack }) {
 <ImageWithFallback
   src="https://tse4.mm.bing.net/th/id/OIP.nVYgmUjfM5AkuY_Lo9_WsgHaFO?pid=Api"
   alt="(Challenger, MT800)"
-  className="w-full h-full object-cover"
+  className="w-full h-auto object-contain"
 />
               </div>
             </div>

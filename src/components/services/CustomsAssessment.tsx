@@ -66,11 +66,11 @@ export default function CustomsAssessment({ onBack }) {
             </div>
 
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                <ImageWithFallback
+              <div className="rounded-2xl overflow-hidden shadow-2xl bg-black/5">
+  <ImageWithFallback
                   src="https://images.unsplash.com/photo-1587474260584-136574528ed5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXN0b21zJTIwY2FyJTIwaW1wb3J0JTIwYm9yZGVyfGVufDF8fHx8MTc1NzE1ODA4N3ww&ixlib=rb-4.1.0&q=80&w=1080"
                   alt="Митне оформлення автомобілів"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>

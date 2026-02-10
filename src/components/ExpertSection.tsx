@@ -12,11 +12,11 @@ function ExpertSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Photo */}
           <div className="relative">
-            <div className="aspect-[3/4] max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl">
+            <div className="rounded-2xl overflow-hidden shadow-2xl bg-black/5">
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1592878995758-02b32ddabdd3?auto=format&fit=crop&w=1080&q=80"
                 alt="Пилипенко Анатолій Іванович - сертифікований судовий незалежний експерт"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-contain"
               />
             </div>
 
@@ -39,7 +39,7 @@ function ExpertSection() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-900">З 1996 року</p>
-                  <p className="text-xs text-gray-500">29+ років експертизи</p>
+                  <p className="text-xs text-gray-500">30+ років експертизи</p>
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@ function ExpertSection() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {[
                 [<Award className="w-6 h-6 text-blue-600" />, 'Свідоцтво', 'Міністерство юстиції України'],
-                [<Calendar className="w-6 h-6 text-green-600" />, 'Незалежний стаж', 'З 1996 року (29+ років)'],
+                [<Calendar className="w-6 h-6 text-green-600" />, 'Незалежний стаж', 'З 1996 року (30+ років)'],
                 [<Scale className="w-6 h-6 text-purple-600" />, 'Членство', 'Союз експертів України'],
                 [<FileText className="w-6 h-6 text-orange-600" />, 'Свідоцтво', '№22 безстроково'],
                 [<Building className="w-6 h-6 text-indigo-600" />, 'Стаж за фахом', 'З 1982 року'],
@@ -104,11 +104,11 @@ function ExpertSection() {
         {/* two extra images */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="relative">
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+            <div className="rounded-2xl overflow-hidden shadow-2xl bg-black/5">
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1555140713-973b9f36cd1e?auto=format&fit=crop&w=1080&q=80"
                 alt="Професійний експерт за роботою"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-contain"
               />
             </div>
             <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-4 border border-white/20">
@@ -125,11 +125,11 @@ function ExpertSection() {
           </div>
 
           <div className="relative">
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+            <div className="rounded-2xl overflow-hidden shadow-2xl bg-black/5">
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1673187139211-1e7ec3dd60ec?auto=format&fit=crop&w=1080&q=80"
                 alt="Процес огляду та оцінки автомобіля"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-4 border border-white/20">

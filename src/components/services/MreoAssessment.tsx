@@ -76,11 +76,11 @@ export default function MreoAssessment({ onBack, onContact }) {
             </div>
 
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                <ImageWithFallback
+              <div className="rounded-2xl overflow-hidden shadow-2xl bg-black/5">
+  <ImageWithFallback
                   src="https://images.unsplash.com/photo-1630406144797-821be1f35d75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHx2ZWhpY2xlJTIwcmVnaXN0cmF0aW9uJTIwaW5zcGVjdGlvbiUyMGRvY3VtZW50fGVufDF8fHx8MTc1ODgwMTA3MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="Оцінка автомобіля для реєстрації в МРЕО"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>

@@ -78,11 +78,11 @@ export default function PurchaseContract({ onBack, onContact }) {
             </div>
 
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                <ImageWithFallback
+              <div className="rounded-2xl overflow-hidden shadow-2xl bg-black/5">
+  <ImageWithFallback
                   src="https://images.unsplash.com/photo-1696861270495-7f35c35c3273?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBwdXJjaGFzZSUyMHNhbGUlMjBjb250cmFjdCUyMGhhbmRzaGFrZXxlbnwxfHx8fDE3NTg4MDIxNzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="Договір купівлі-продажу автомобіля"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>

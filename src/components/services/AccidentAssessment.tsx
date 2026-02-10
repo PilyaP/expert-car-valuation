@@ -77,11 +77,11 @@ export default function AccidentAssessment({ onBack, onContact }) {
             </div>
 
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                <ImageWithFallback
+              <div className="rounded-2xl overflow-hidden shadow-2xl bg-black/5">
+  <ImageWithFallback
                   src="https://images.unsplash.com/photo-1687867451910-28941a460f35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBhY2NpZGVudCUyMGRhbWFnZSUyMGFzc2Vzc21lbnQlMjBwcm9mZXNzaW9uYWwlMjBpbnNwZWN0aW9ufGVufDF8fHx8MTc1ODgwMTA2Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="Професійна оцінка пошкоджень автомобіля після ДТП"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>

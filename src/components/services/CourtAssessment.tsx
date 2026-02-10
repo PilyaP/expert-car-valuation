@@ -77,11 +77,11 @@ export default function CourtAssessment({ onBack, onContact }) {
             </div>
 
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                <ImageWithFallback
+              <div className="rounded-2xl overflow-hidden shadow-2xl bg-black/5">
+  <ImageWithFallback
                   src="https://images.unsplash.com/photo-1654588833543-f231a643ee72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3VydCUyMGV4cGVydCUyMGF1dG9tb3RpdmUlMjBldmFsdWF0aW9uJTIwbGVnYWx8ZW58MXx8fHwxNzU4ODAxMDY2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="Судова експертиза автомобіля професійним експертом"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>

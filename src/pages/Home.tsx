@@ -10,7 +10,7 @@ import NavBar from '@/components/NavBar'
 import { services } from '@/data/services'
 import type { PageId, SectionId } from '@/types/pages'
 
-// сторінки
+
 import AccidentAssessment from '@/components/services/AccidentAssessment'
 import CourtAssessment from '@/components/services/CourtAssessment'
 import MreoAssessment from '@/components/services/MreoAssessment'
