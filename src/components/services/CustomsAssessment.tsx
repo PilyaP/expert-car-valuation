@@ -120,7 +120,7 @@ export default function CustomsAssessment({ onBack }) {
                 <Award className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="text-gray-900 mb-2">Досвід експерта</h3>
-              <p className="text-gray-600 text-sm">29 років роботи з митними органами</p>
+              <p className="text-gray-600 text-sm">30 років роботи з митними органами</p>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-'use client';
+='use client';
 
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";

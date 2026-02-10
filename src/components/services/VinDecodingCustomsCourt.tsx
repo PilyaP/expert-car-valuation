@@ -416,7 +416,7 @@ export default function VinDecodingCustomsCourt({ onBack }: VinDecodingProps) {
                   <Award className="w-6 h-6 text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="text-gray-900 font-medium mb-1">29 років досвіду</h4>
+                  <h4 className="text-gray-900 font-medium mb-1">30 років досвіду</h4>
                   <p className="text-gray-600 text-sm">
                     Багаторічний досвід роботи з митницею та судовими органами
                   </p>

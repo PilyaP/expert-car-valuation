@@ -101,7 +101,7 @@ function Hero({ onPrimary, onSecondary }: HeroProps) {
                 </div>
                 <div>
                   <p className="text-gray-900">Незалежний експерт зі свідоцтвом МЮ</p>
-                  <p className="text-sm text-gray-500">29 років експертного стажу</p>
+                  <p className="text-sm text-gray-500">30 років експертного стажу</p>
                 </div>
               </div>
             </div>

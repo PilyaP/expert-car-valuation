@@ -17,7 +17,7 @@ const ADVANTAGES: { icon: React.ReactNode; title: string; text: string }[] = [
   {
     icon: <Award className="w-8 h-8 text-purple-600" />,
     title: "Професійно. Об'єктивно. Законно.",
-    text: '29 років досвіду та репутація',
+    text: '30 років досвіду та репутація',
   },
   {
     icon: <Shield className="w-8 h-8 text-orange-600" />,

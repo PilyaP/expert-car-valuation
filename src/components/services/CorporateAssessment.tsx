@@ -192,7 +192,7 @@ export default function CorporateAssessment({ onBack, onContact }) {
                       <div className="w-6 h-6 bg-yellow-600 text-white rounded-full flex items-center justify-center text-xs flex-shrink-0 mt-1">1</div>
                       <div>
                         <h4 className="text-gray-900 text-sm mb-1">Досвід роботи з бізнесом</h4>
-                        <p className="text-gray-600 text-xs">29 років досвіду експертної роботи з юридичними особами</p>
+                        <p className="text-gray-600 text-xs">30 років досвіду експертної роботи з юридичними особами</p>
                       </div>
                     </div>
                     
