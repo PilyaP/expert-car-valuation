@@ -35,10 +35,11 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ services }) => {
               key={s.id}
               to={`/service/${s.id}`}
               aria-label={s.ariaLabel ?? `Детальніше: ${s.title}`}
-              className="group block text-left h-full"
+              className="group block text-left h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-2xl"
+
             >
               <div className="h-full flex flex-col rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow bg-white">
-                {/* Важно: внутренности pointer-events-none, чтобы никакие слои не ломали клик */}
+         
                 <div className="pointer-events-none">
                   <div className={`w-12 h-12 ${s.iconBg ?? 'bg-blue-50'} rounded-lg flex items-center justify-center mb-4`}>
                     {s.icon}

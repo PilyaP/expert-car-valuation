@@ -46,28 +46,28 @@ export default function App() {
         onLogoClick={() => (window.location.href = "/")}
       />
 
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Hero />
-              <Advantages />
-              <GeoInfo mapsHref={mapsHref} />
-              <ServicesSection services={services} />
-              <ExpertSection />
-              <ContactsSection mapsHref={mapsHref} />
-            </>
-          }
-        />
+<Routes>
+  <Route
+    path="/"
+    element={
+      <>
+        <Hero />
+        <Advantages />
+        <GeoInfo mapsHref={mapsHref} />
+        <ServicesSection services={services} />
+        <ExpertSection />
+        <ContactsSection mapsHref={mapsHref} />
+      </>
+    }
+  />
 
-        <Route
-          path="/service/:id"
-          element={<ServicePage onContact={() => scrollToSection("contacts")} />}
-        />
+  <Route
+    path="/service/:id"
+    element={<ServicePage onContact={() => scrollToSection("contacts")} />}
+  />
 
-        <Route path="*" element={<div className="p-8">404</div>} />
-      </Routes>
+  <Route path="*" element={<div className="p-8">404</div>} />
+</Routes>
 
       <Footer mapsHref={mapsHref} onServicesClick={() => scrollToSection("services")} />
     </div>
