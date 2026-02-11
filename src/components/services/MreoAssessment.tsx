@@ -31,7 +31,7 @@ export default function MreoAssessment({ onBack }: Props) {
 
   const handleEmailClick = () => {
     window.location.href =
-      "mailto:aiexpert@ua.fm?subject=Запит%20на%20оцінку%20для%20СЦ%20МВС%20(МРЕО)&body=Доброго%20дня!%20Мені%20потрібна%20оцінка%20автомобіля%20для%20реєстрації%20в%20сервісному%20центрі%20МВС.%20Прошу%20підказати%20які%20документи%20потрібні%20та%20терміни%20виконання.";
+      "mailto:aiexpert65@gmail.com?subject=Запит%20на%20оцінку%20для%20СЦ%20МВС%20(МРЕО)&body=Доброго%20дня!%20Мені%20потрібна%20оцінка%20автомобіля%20для%20реєстрації%20в%20сервісному%20центрі%20МВС.%20Прошу%20підказати%20які%20документи%20потрібні%20та%20терміни%20виконання.";
   };
 
   const serviceJsonLd = {
@@ -43,7 +43,7 @@ export default function MreoAssessment({ onBack }: Props) {
       "@type": "ProfessionalService",
       name: "Судовий автоексперт — Пилипенко Анатолій Іванович",
       telephone: "+380972158437",
-      email: "aiexpert@ua.fm",
+      email: "aiexpert65@gmail.com",
       areaServed: ["Дніпро", "Дніпропетровська область"],
       url: "https://expert-car-ai.vercel.app/",
     },
@@ -333,7 +333,7 @@ export default function MreoAssessment({ onBack }: Props) {
 
                     <div className="flex items-center space-x-3">
                       <Mail className="w-4 h-4 text-green-600" />
-                      <p className="text-gray-900 text-sm">aiexpert@ua.fm</p>
+                      <p className="text-gray-900 text-sm">aiexpert65@gmail.com</p>
                     </div>
 
                     <div className="flex items-center space-x-3">
@@ -389,7 +389,7 @@ export default function MreoAssessment({ onBack }: Props) {
               <p>
                 За потреби можливе термінове виконання. Щоб уточнити перелік
                 документів саме під ваш випадок — телефонуйте (097) 215-84-37 або
-                (063) 796-14-03, або пишіть на aiexpert@ua.fm.
+                (063) 796-14-03, або пишіть на aiexpert65@gmail.com.
               </p>
             </div>
           </div>

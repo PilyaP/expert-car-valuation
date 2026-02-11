@@ -29,7 +29,7 @@ export default function AccidentAssessment({ onBack }: Props) {
 
   const handleEmailClick = () => {
     window.location.href =
-      "mailto:aiexpert@ua.fm?subject=Запит%20на%20оцінку%20після%20ДТП&body=Доброго%20дня!%20Мені%20потрібна%20незалежна%20оцінка%20автомобіля%20після%20ДТП.";
+      "mailto:aiexpert65@gmail.com?subject=Запит%20на%20оцінку%20після%20ДТП&body=Доброго%20дня!%20Мені%20потрібна%20незалежна%20оцінка%20автомобіля%20після%20ДТП.";
   };
 
   const canonical = "https://expert-car-ai.vercel.app/service/accident-assessment";
@@ -43,7 +43,7 @@ export default function AccidentAssessment({ onBack }: Props) {
       "@type": "ProfessionalService",
       name: "Судовий автоексперт — Пилипенко Анатолій Іванович",
       telephone: "+380972158437",
-      email: "aiexpert@ua.fm",
+      email: "aiexpert65@gmail.com",
       areaServed: ["Дніпро", "Дніпропетровська область"],
       url: "https://expert-car-ai.vercel.app/",
     },
@@ -348,7 +348,7 @@ export default function AccidentAssessment({ onBack }: Props) {
 
                     <div className="flex items-center space-x-3">
                       <Mail className="w-4 h-4 text-red-600" />
-                      <p className="text-gray-900 text-sm">aiexpert@ua.fm</p>
+                      <p className="text-gray-900 text-sm">aiexpert65@gmail.com</p>
                     </div>
 
                     <div className="flex items-center space-x-3">

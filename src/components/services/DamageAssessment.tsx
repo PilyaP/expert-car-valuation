@@ -28,7 +28,7 @@ export default function DamageAssessment({ onBack }: Props) {
 
   const handleEmailClick = () => {
     window.location.href =
-      "mailto:aiexpert@ua.fm?subject=Запит%20на%20визначення%20розміру%20збитків&body=Доброго%20дня!%20Мені%20потрібне%20визначення%20розміру%20збитків%20і%20пошкоджень%20автомобіля.%20Прошу%20підказати%20перелік%20документів%20та%20вартість%20послуги.";
+      "mailto:aiexpert65@gmail.com?subject=Запит%20на%20визначення%20розміру%20збитків&body=Доброго%20дня!%20Мені%20потрібне%20визначення%20розміру%20збитків%20і%20пошкоджень%20автомобіля.%20Прошу%20підказати%20перелік%20документів%20та%20вартість%20послуги.";
   };
 
   const serviceJsonLd = {
@@ -40,7 +40,7 @@ export default function DamageAssessment({ onBack }: Props) {
       "@type": "ProfessionalService",
       name: "Судовий автоексперт — Пилипенко Анатолій Іванович",
       telephone: "+380972158437",
-      email: "aiexpert@ua.fm",
+      email: "aiexpert65@gmail.com",
       areaServed: ["Дніпро", "Дніпропетровська область"],
       url: "https://expert-car-ai.vercel.app/",
     },

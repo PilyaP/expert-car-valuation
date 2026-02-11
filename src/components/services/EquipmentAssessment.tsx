@@ -33,7 +33,7 @@ export default function EquipmentAssessment({ onBack }: Props) {
 
   const handleEmailClick = () => {
     window.location.href =
-      "mailto:aiexpert@ua.fm?subject=Запит%20на%20оцінку%20обладнання&body=Доброго%20дня!%20Мені%20потрібна%20експертна%20оцінка%20обладнання.%20Прошу%20повідомити%20перелік%20необхідних%20даних%20та%20вартість%20послуги.";
+      "mailto:aiexpert65@gmail.com?subject=Запит%20на%20оцінку%20обладнання&body=Доброго%20дня!%20Мені%20потрібна%20експертна%20оцінка%20обладнання.%20Прошу%20повідомити%20перелік%20необхідних%20даних%20та%20вартість%20послуги.";
   };
 
   const serviceJsonLd = {
@@ -45,7 +45,7 @@ export default function EquipmentAssessment({ onBack }: Props) {
       "@type": "ProfessionalService",
       name: "Судовий автоексперт — Пилипенко Анатолій Іванович",
       telephone: "+380972158437",
-      email: "aiexpert@ua.fm",
+      email: "aiexpert65@gmail.com",
       areaServed: ["Дніпро", "Дніпропетровська область"],
       url: "https://expert-car-ai.vercel.app/",
     },

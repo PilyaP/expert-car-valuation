@@ -81,8 +81,8 @@ function ContactsSection({ mapsHref }: ContactsSectionProps) {
                 <div>
                   <h3 className="text-gray-900 mb-2">Електронна пошта</h3>
                   <p className="text-gray-600">
-                    <a href="mailto:aiexpert@ua.fm" className="hover:text-blue-600 transition-colors">
-                      aiexpert@ua.fm
+                    <a href="mailto:aiexpert65@gmail.com" className="hover:text-blue-600 transition-colors">
+                      aiexpert65@gmail.com
                     </a>
                   </p>
                 </div>
@@ -101,7 +101,7 @@ function ContactsSection({ mapsHref }: ContactsSectionProps) {
                 <Button asChild variant="outline" size="lg" className="border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3">
                   <a
                     href={
-                      'mailto:aiexpert@ua.fm' +
+                      'mailto:aiexpert65@gmail.com' +
                       '?subject=' +
                       encodeURIComponent('Запит на оцінку автомобіля') +
                       '&body=' +

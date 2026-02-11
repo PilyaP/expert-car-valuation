@@ -23,7 +23,7 @@ export default function TaxInvestigationAssessment({ onBack, onContact }) {
   };
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:aiexpert@ua.fm?subject=Запит на оцінку для податкових/слідчих органів&body=Доброго дня! Мені потрібна експертна оцінка автомобіля для податкових або слідчих органів.';
+    window.location.href = 'mailto:aiexpert65@gmail.com?subject=Запит на оцінку для податкових/слідчих органів&body=Доброго дня! Мені потрібна експертна оцінка автомобіля для податкових або слідчих органів.';
   };
 
   return (
@@ -236,7 +236,7 @@ export default function TaxInvestigationAssessment({ onBack, onContact }) {
                     
                     <div className="flex items-center space-x-3">
                       <Mail className="w-4 h-4 text-orange-600" />
-                      <p className="text-gray-900 text-sm">aiexpert@ua.fm</p>
+                      <p className="text-gray-900 text-sm">aiexpert65@gmail.com</p>
                     </div>
                     
                     <div className="flex items-center space-x-3">
@@ -297,7 +297,7 @@ export default function TaxInvestigationAssessment({ onBack, onContact }) {
               <p>
                 Працюємо у Дніпрі та виїжджаємо по всій Дніпропетровській області для проведення експертизи. Можливе терміново виконання при необхідності. 
                 Готовність експертного висновку 1-5 робочих днів залежно від складності. Консультації безкоштовні. Зв'язок: (097) 215-84-37, 
-                (063) 796-14-03, aiexpert@ua.fm.
+                (063) 796-14-03, aiexpert65@gmail.com.
               </p>
             </div>
           </div>

@@ -25,7 +25,7 @@ type Props = {
 export default function CorporateAssessment({ onBack }: Props) {
   const PHONE_MAIN = "+380972158437";
   const PHONE_ALT = "+380637961403";
-  const EMAIL = "aiexpert@ua.fm";
+  const EMAIL = "aiexpert65@gmail.com";
 
   // IMPORTANT: постав правильний URL сторінки (роут)
   const URL = "https://expert-car-ai.vercel.app/service/corporate-assessment";
@@ -139,11 +139,11 @@ export default function CorporateAssessment({ onBack }: Props) {
             </div>
 
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="rounded-2xl overflow-hidden shadow-2xl bg-black/5">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1695230981824-8edd894a6c2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGFjY291bnRpbmclMjBmaW5hbmNlfGVufDF8fHx8MTc1ODgwMTk1Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="Корпоративна експертна оцінка автомобіля"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>

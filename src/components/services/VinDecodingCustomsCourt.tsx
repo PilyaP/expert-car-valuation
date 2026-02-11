@@ -33,7 +33,7 @@ export default function VinDecodingCustomsCourt({ onBack, onContact }: VinDecodi
 
   const handleEmail = () => {
     window.location.href =
-      "mailto:aiexpert@ua.fm?subject=Запит на розшифрування VIN (митниця/суд)&body=Доброго дня! Мені потрібно розшифрування VIN для митниці або суду. VIN: ________";
+      "mailto:aiexpert65@gmail.com?subject=Запит на розшифрування VIN (митниця/суд)&body=Доброго дня! Мені потрібно розшифрування VIN для митниці або суду. VIN: ________";
   };
 
   return (

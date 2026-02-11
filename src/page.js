@@ -43,7 +43,7 @@
 
 //   const handleEmailClick = () => {
 //     window.location.href =
-//       "mailto:aiexpert@ua.fm?subject=Запит на оцінку автомобіля&body=Доброго дня! Мені потрібна консультація щодо оцінки автомобіля.";
+//       "mailto:aiexpert65@gmail.com?subject=Запит на оцінку автомобіля&body=Доброго дня! Мені потрібна консультація щодо оцінки автомобіля.";
 //   };
 
 //   const handleOrderAssessment = () => {
@@ -1010,10 +1010,10 @@
 //                     <h3 className="text-gray-900 mb-2">Електронна пошта</h3>
 //                     <p className="text-gray-600">
 //                       <a
-//                         href="mailto:aiexpert@ua.fm"
+//                         href="mailto:aiexpert65@gmail.com"
 //                         className="hover:text-blue-600 transition-colors"
 //                       >
-//                         aiexpert@ua.fm
+//                         aiexpert65@gmail.com
 //                       </a>
 //                     </p>
 //                   </div>
@@ -1185,10 +1185,10 @@
 //                 </li>
 //                 <li>
 //                   <a
-//                     href="mailto:aiexpert@ua.fm"
+//                     href="mailto:aiexpert65@gmail.com"
 //                     className="hover:text-white transition-colors"
 //                   >
-//                     aiexpert@ua.fm
+//                     aiexpert65@gmail.com
 //                   </a>
 //                 </li>
 //                 <li>м. Дніпро та область</li>

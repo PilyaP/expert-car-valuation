@@ -13,7 +13,7 @@ type Props = {
 
 const PHONE_MAIN = "+380972158437";
 const PHONE_ALT = "+380637961403";
-const EMAIL = "aiexpert@ua.fm";
+const EMAIL = "aiexpert65@gmail.com";
 
 function buildMailto(subject: string, body: string) {
   return `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;

@@ -23,7 +23,7 @@ export default function PurchaseContract({ onBack, onContact }) {
   };
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:aiexpert@ua.fm?subject=Запит на договір купівлі-продажу&body=Доброго дня! Мені потрібна допомога з оформленням договору купівлі-продажу автомобіля.';
+    window.location.href = 'mailto:aiexpert65@gmail.com?subject=Запит на договір купівлі-продажу&body=Доброго дня! Мені потрібна допомога з оформленням договору купівлі-продажу автомобіля.';
   };
 
   return (

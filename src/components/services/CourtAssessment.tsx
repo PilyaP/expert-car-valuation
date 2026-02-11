@@ -30,7 +30,7 @@ export default function CourtAssessment({ onBack }: Props) {
 
   const handleEmailClick = () => {
     window.location.href =
-      "mailto:aiexpert@ua.fm?subject=Запит%20на%20судову%20автоекспертизу&body=Доброго%20дня!%20Мені%20потрібна%20судова%20автоекспертиза%20транспортного%20засобу.";
+      "mailto:aiexpert65@gmail.com?subject=Запит%20на%20судову%20автоекспертизу&body=Доброго%20дня!%20Мені%20потрібна%20судова%20автоекспертиза%20транспортного%20засобу.";
   };
 
   const canonical =
@@ -45,7 +45,7 @@ export default function CourtAssessment({ onBack }: Props) {
       "@type": "ProfessionalService",
       name: "Судовий автоексперт — Пилипенко Анатолій Іванович",
       telephone: "+380972158437",
-      email: "aiexpert@ua.fm",
+      email: "aiexpert65@gmail.com",
       areaServed: ["Дніпро", "Дніпропетровська область"],
       url: "https://expert-car-ai.vercel.app/",
     },
@@ -377,7 +377,7 @@ export default function CourtAssessment({ onBack }: Props) {
 
                     <div className="flex items-center space-x-3">
                       <Mail className="w-4 h-4 text-blue-600" />
-                      <p className="text-gray-900 text-sm">aiexpert@ua.fm</p>
+                      <p className="text-gray-900 text-sm">aiexpert65@gmail.com</p>
                     </div>
 
                     <div className="flex items-center space-x-3">

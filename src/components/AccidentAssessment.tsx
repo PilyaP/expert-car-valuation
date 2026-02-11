@@ -27,7 +27,7 @@ type Props = {
 export default function AccidentAssessment({ onBack }: Props) {
   const PHONE_MAIN = "+380972158437";
   const PHONE_ALT = "+380637961403";
-  const EMAIL = "aiexpert@ua.fm";
+  const EMAIL = "aiexpert65@gmail.com";
   const URL = "https://expert-car-ai.vercel.app/service/accident-assessment";
   const HOME = "https://expert-car-ai.vercel.app/";
 

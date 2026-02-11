@@ -24,7 +24,7 @@ function Footer({ mapsHref, onServicesClick }: SiteFooterProps) {
               </a>
 
               <a
-                href={'mailto:aiexpert@ua.fm?subject=' + encodeURIComponent('Запит на оцінку автомобіля')}
+                href={'mailto:aiexpert65@gmail.com?subject=' + encodeURIComponent('Запит на оцінку автомобіля')}
                 className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
                 aria-label="Написати email"
               >
@@ -73,8 +73,8 @@ function Footer({ mapsHref, onServicesClick }: SiteFooterProps) {
                 </a>
               </li>
               <li>
-                <a href="mailto:aiexpert@ua.fm" className="hover:text-white transition-colors">
-                  aiexpert@ua.fm
+                <a href="mailto:aiexpert65@gmail.com" className="hover:text-white transition-colors">
+                  aiexpert65@gmail.com
                 </a>
               </li>
               <li>

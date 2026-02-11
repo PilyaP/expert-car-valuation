@@ -32,7 +32,7 @@ export default function InsuranceAssessment({ onBack }: Props) {
 
   const handleEmailClick = () => {
     window.location.href =
-      "mailto:aiexpert@ua.fm?subject=Запит%20на%20оцінку%20для%20страхової%20компанії&body=Доброго%20дня!%20Мені%20потрібна%20незалежна%20експертна%20оцінка%20автомобіля%20для%20страхової%20компанії.%20Прошу%20підказати%20перелік%20документів%20та%20терміни.";
+      "mailto:aiexpert65@gmail.com?subject=Запит%20на%20оцінку%20для%20страхової%20компанії&body=Доброго%20дня!%20Мені%20потрібна%20незалежна%20експертна%20оцінка%20автомобіля%20для%20страхової%20компанії.%20Прошу%20підказати%20перелік%20документів%20та%20терміни.";
   };
 
   const serviceJsonLd = {
@@ -44,7 +44,7 @@ export default function InsuranceAssessment({ onBack }: Props) {
       "@type": "ProfessionalService",
       name: "Судовий автоексперт — Пилипенко Анатолій Іванович",
       telephone: "+380972158437",
-      email: "aiexpert@ua.fm",
+      email: "aiexpert65@gmail.com",
       areaServed: ["Дніпро", "Дніпропетровська область"],
       url: "https://expert-car-ai.vercel.app/",
     },
@@ -338,7 +338,7 @@ export default function InsuranceAssessment({ onBack }: Props) {
 
                     <div className="flex items-center space-x-3">
                       <Mail className="w-4 h-4 text-rose-600" />
-                      <p className="text-gray-900 text-sm">aiexpert@ua.fm</p>
+                      <p className="text-gray-900 text-sm">aiexpert65@gmail.com</p>
                     </div>
 
                     <div className="flex items-center space-x-3">
