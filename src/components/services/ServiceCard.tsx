@@ -54,7 +54,7 @@ export default function TaxInvestigationAssessment({ onBack, onContact }) {
               
               <p className="text-xl text-gray-600 leading-relaxed">
                 Офіційні незалежні експертні висновки для податкових органів, слідчих органів, прокуратури, адвокатських запитів та інших державних установ. 
-                Атестований судовий експерт з 29-річним досвідом.
+                Атестований судовий експерт з 30-річним досвідом.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
