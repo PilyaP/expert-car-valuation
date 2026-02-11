@@ -49,6 +49,8 @@ function GeoInfo({ mapsHref, className = '' }: GeoInfoProps) {
           </p>
         </div>
       </div>
+
+      
     </section>
   )
 }
