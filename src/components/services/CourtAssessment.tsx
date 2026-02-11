@@ -34,7 +34,7 @@ export default function CourtAssessment({ onBack }: Props) {
   };
 
   const canonical =
-    "https://expert-car-ai.vercel.app/service/court-assessment";
+    "https://expert-dp.com/service/court-assessment";
 
   const serviceJsonLd = {
     "@context": "https://schema.org",
@@ -47,7 +47,7 @@ export default function CourtAssessment({ onBack }: Props) {
       telephone: "+380972158437",
       email: "aiexpert65@gmail.com",
       areaServed: ["Дніпро", "Дніпропетровська область"],
-      url: "https://expert-car-ai.vercel.app/",
+      url: "https://expert-dp.com/",
     },
     areaServed: ["Дніпро", "Дніпропетровська область"],
     url: canonical,

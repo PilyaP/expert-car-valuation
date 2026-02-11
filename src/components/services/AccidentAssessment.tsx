@@ -32,7 +32,7 @@ export default function AccidentAssessment({ onBack }: Props) {
       "mailto:aiexpert65@gmail.com?subject=Запит%20на%20оцінку%20після%20ДТП&body=Доброго%20дня!%20Мені%20потрібна%20незалежна%20оцінка%20автомобіля%20після%20ДТП.";
   };
 
-  const canonical = "https://expert-car-ai.vercel.app/service/accident-assessment";
+  const canonical = "https://expert-dp.com/service/accident-assessment";
 
   const serviceJsonLd = {
     "@context": "https://schema.org",
@@ -45,7 +45,7 @@ export default function AccidentAssessment({ onBack }: Props) {
       telephone: "+380972158437",
       email: "aiexpert65@gmail.com",
       areaServed: ["Дніпро", "Дніпропетровська область"],
-      url: "https://expert-car-ai.vercel.app/",
+      url: "https://expert-dp.com/",
     },
     areaServed: ["Дніпро", "Дніпропетровська область"],
     url: canonical,

@@ -25,7 +25,7 @@ type Props = {
 
 export default function EquipmentAssessment({ onBack }: Props) {
   const canonical =
-    "https://expert-car-ai.vercel.app/service/equipment-assessment";
+    "https://expert-dp.com/service/equipment-assessment";
 
   const handlePhoneCall = (phoneNumber: string) => {
     window.location.href = `tel:${phoneNumber}`;
@@ -47,7 +47,7 @@ export default function EquipmentAssessment({ onBack }: Props) {
       telephone: "+380972158437",
       email: "aiexpert65@gmail.com",
       areaServed: ["Дніпро", "Дніпропетровська область"],
-      url: "https://expert-car-ai.vercel.app/",
+      url: "https://expert-dp.com/",
     },
     areaServed: ["Дніпро", "Дніпропетровська область", "Україна"],
     url: canonical,

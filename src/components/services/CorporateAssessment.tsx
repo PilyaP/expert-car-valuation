@@ -28,8 +28,8 @@ export default function CorporateAssessment({ onBack }: Props) {
   const EMAIL = "aiexpert65@gmail.com";
 
   // IMPORTANT: постав правильний URL сторінки (роут)
-  const URL = "https://expert-car-ai.vercel.app/service/corporate-assessment";
-  const HOME = "https://expert-car-ai.vercel.app/";
+  const URL = "https://expert-dp.com/service/corporate-assessment";
+  const HOME = "https://expert-dp.com/";
 
   const handlePhoneCall = (phoneNumber: string) => {
     window.location.href = `tel:${phoneNumber}`;
