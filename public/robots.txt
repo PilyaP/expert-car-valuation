@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://expert-dp.com/sitemap.xml
+Sitemap: https://expert-dp.com/sitemap-index.xml
