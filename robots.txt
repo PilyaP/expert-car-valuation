@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://expert-car-ai.vercel.app/sitemap.xml
+Sitemap: https://expert-dp.com/sitemap-index.xml
