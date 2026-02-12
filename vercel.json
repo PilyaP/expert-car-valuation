@@ -3,10 +3,10 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "routes": [
-    { "src": "/robots\\.txt", "dest": "/robots.txt" },
-    { "src": "/sitemap\\.xml", "dest": "/sitemap.xml" },
-    { "src": "/sitemap-services\\.xml", "dest": "/sitemap-services.xml" },
-    { "src": "/sitemap-index\\.xml", "dest": "/sitemap-index.xml" },
+    { "src": "/robots\\.txt$", "dest": "/robots.txt" },
+    { "src": "/sitemap\\.xml$", "dest": "/sitemap.xml" },
+    { "src": "/sitemap-index\\.xml$", "dest": "/sitemap-index.xml" },
+    { "src": "/sitemap-services\\.xml$", "dest": "/sitemap-services.xml" },
 
     { "handle": "filesystem" },
     { "src": "/.*", "dest": "/index.html" }
