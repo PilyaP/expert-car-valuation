@@ -2,11 +2,10 @@
 
 import React, { memo } from 'react'
 import { Button } from '@/components/ui/button'
-import { ImageWithFallback } from '@/components/figma/ImageWithFallback'
 
 type HeroProps = {
-  onPrimary?: () => void // optional handler for the primary CTA (call)
-  onSecondary?: () => void // optional handler for the secondary CTA (scroll to contacts)
+  onPrimary?: () => void
+  onSecondary?: () => void
 }
 
 const BADGES: { text: string; bg: string; color: string }[] = [
@@ -14,7 +13,6 @@ const BADGES: { text: string; bg: string; color: string }[] = [
   { text: 'Офіційні незалежні висновки', bg: 'bg-blue-100', color: 'text-blue-600' },
   { text: 'Швидко та якісно', bg: 'bg-purple-100', color: 'text-purple-600' },
 ]
-
 
 function Hero({ onPrimary, onSecondary }: HeroProps) {
   return (
@@ -29,7 +27,8 @@ function Hero({ onPrimary, onSecondary }: HeroProps) {
               </h1>
 
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-2xl">
-                Атестований незалежний судовий експерт з понад 30-річним досвідом. Офіційні висновки для митниці, МРЕО, суду, нотаріусів, страхових компаній, податкових і слідчих органів, ЗСУ та юридичних фірм.
+                Атестований незалежний судовий експерт з понад 30-річним досвідом. Офіційні висновки для митниці, МРЕО, суду, нотаріусів,
+                страхових компаній, податкових і слідчих органів, ЗСУ та юридичних фірм.
               </p>
 
               <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-2xl">
@@ -37,9 +36,15 @@ function Hero({ onPrimary, onSecondary }: HeroProps) {
               </p>
 
               {/* soft card with points */}
-<div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-blue-100"> <p className="text-blue-700 text-center mb-2"> <span className="text-xl">🔹 Професійна експертна оцінка = справедливе рішення</span> </p> <p className="text-gray-600 text-center">🔹 Експертні незалежні висновки для всіх установ та організацій</p> </div> </div>
-
-
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-blue-100">
+                <p className="text-blue-700 text-center mb-2">
+                  <span className="text-xl">🔹 Професійна експертна оцінка = справедливе рішення</span>
+                </p>
+                <p className="text-gray-600 text-center">
+                  🔹 Експертні незалежні висновки для всіх установ та організацій
+                </p>
+              </div>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -48,11 +53,7 @@ function Hero({ onPrimary, onSecondary }: HeroProps) {
                 asChild={!onPrimary}
                 onClick={onPrimary}
               >
-                {onPrimary ? (
-                  <span>Замовити оцінку</span>
-                ) : (
-                  <a href="tel:+380972158437">Замовити оцінку</a>
-                )}
+                {onPrimary ? <span>Замовити оцінку</span> : <a href="tel:+380972158437">Замовити оцінку</a>}
               </Button>
 
               <Button
@@ -66,7 +67,7 @@ function Hero({ onPrimary, onSecondary }: HeroProps) {
               </Button>
             </div>
 
-            {/* Badges — без динамічних класів Tailwind */}
+            {/* Badges */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8">
               {BADGES.map((b) => (
                 <div key={b.text} className="flex items-center space-x-3">
@@ -81,22 +82,35 @@ function Hero({ onPrimary, onSecondary }: HeroProps) {
             </div>
           </div>
 
-          {/* Image */}
+          {/* right image */}
           <div className="relative">
-<div className="rounded-2xl overflow-hidden shadow-2xl bg-black/5">
-  <ImageWithFallback
-    src="https://images.unsplash.com/photo-1534953280463-b7b1b04e5fad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-    alt="Оцінка Дніпро"
-    className="w-full h-auto object-contain"
-  />
-</div>
+            <div className="rounded-2xl overflow-hidden shadow-2xl bg-black/5">
+              {/* фиксируем высоту, чтобы не было CLS */}
+              <div className="w-full aspect-video">
+                <img
+                  src="/hero-photo.webp"
+                  width="1280"
+                  height="720"
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                  alt="Судовий незалежний автоексперт у Дніпрі"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
 
             {/* floating badge */}
             <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-6 border border-gray-100">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                    />
                   </svg>
                 </div>
                 <div>
@@ -106,12 +120,10 @@ function Hero({ onPrimary, onSecondary }: HeroProps) {
               </div>
             </div>
           </div>
+          {/* /right */}
         </div>
       </div>
     </section>
-
-
-    
   )
 }
 
