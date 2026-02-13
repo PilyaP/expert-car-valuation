@@ -57,11 +57,13 @@ function ContactsSection({ mapsHref }: ContactsSectionProps) {
                     </a>
 
                     <a href="https://wa.me/380972158437" target="_blank" rel="noopener noreferrer" title="Написати у WhatsApp" className="inline-flex items-center">
-                      <img src="/brands/whatsapp.png" alt="WhatsApp" className="w-5 h-5 align-middle" loading="lazy" />
+                      <img src="/brands/whatsapp.png"   width="20"
+  height="20" alt="WhatsApp" className="w-5 h-5 align-middle" loading="lazy" />
                     </a>
 
                     <a href="viber://chat?number=%2B380972158437" title="Написати у Viber" className="inline-flex items-center">
-                      <img src="/brands/viber.png" alt="Viber" className="w-5 h-5 align-middle" loading="lazy" />
+                      <img src="/brands/viber.png" alt="Viber"   width="20"
+  height="20" className="w-5 h-5 align-middle" loading="lazy" />
                     </a>
                   </div>
 

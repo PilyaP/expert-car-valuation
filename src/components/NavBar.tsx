@@ -53,7 +53,14 @@ const scrollToSection = useCallback((id: string) => {
             >
               <div className="w-12 h-12 rounded-lg overflow-hidden bg-gray-50 border border-gray-200 flex items-center justify-center">
                 {logoSrc ? (
-                  <img src={logoSrc} alt="Логотип" className="w-full h-full object-contain" />
+                  <img
+  src={logoSrc}
+  alt="Логотип"
+  width={48}
+  height={48}
+  className="w-12 h-12 object-contain"
+/>
+
                 ) : (
                   <span className="text-sm text-gray-400">Лого</span>
                 )}
