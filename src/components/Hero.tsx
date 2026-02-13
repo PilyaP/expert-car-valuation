@@ -83,43 +83,37 @@ function Hero({ onPrimary, onSecondary }: HeroProps) {
           </div>
 
           {/* right image */}
-          <div className="relative">
-            <div className="rounded-2xl overflow-hidden shadow-2xl bg-black/5">
-              {/* фиксируем высоту, чтобы не было CLS */}
-              <div className="w-full aspect-video">
-                <img
-                  src="/hero-photo.webp"
-                  width="1280"
-                  height="720"
-                  loading="eager"
-                  fetchPriority="high"
-                  decoding="async"
-                  alt="Судовий незалежний автоексперт у Дніпрі"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
+<div className="relative">
+  <div className="rounded-2xl overflow-hidden shadow-2xl bg-black/5">
+    <div className="w-full aspect-video">
+      <img
+        src="/hero-photo.webp"
+        width={1280}
+        height={720}
+        loading="eager"
+        decoding="async"
+        alt="Судовий незалежний автоексперт у Дніпрі"
+        className="w-full h-full object-cover"
+      />
+    </div>
+  </div>
 
-            {/* floating badge */}
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-6 border border-gray-100">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-gray-900">Незалежний експерт зі свідоцтвом МЮ</p>
-                  <p className="text-sm text-gray-500">30 років експертного стажу</p>
-                </div>
-              </div>
-            </div>
-          </div>
+  {/* floating badge */}
+  <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+    <div className="flex items-center space-x-4">
+      <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+        </svg>
+      </div>
+
+      <div>
+        <p className="text-gray-900">Незалежний експерт зі свідоцтвом МЮ</p>
+        <p className="text-sm text-gray-500">30 років експертного стажу</p>
+      </div>
+    </div>
+  </div>
+</div>
           {/* /right */}
         </div>
       </div>
