@@ -86,15 +86,16 @@ function Hero({ onPrimary, onSecondary }: HeroProps) {
 <div className="relative">
   <div className="rounded-2xl overflow-hidden shadow-2xl bg-black/5">
     <div className="w-full aspect-video">
-      <img
-        src="/hero-photo.webp"
-        width={1280}
-        height={720}
-        loading="eager"
-        decoding="async"
-        alt="Судовий незалежний автоексперт у Дніпрі"
-        className="w-full h-full object-cover"
-      />
+<img
+  src="/hero-photo.webp"
+  width={1280}
+  height={720}
+  loading="eager"
+  decoding="async"
+  sizes="(max-width: 768px) 100vw, 1280px"
+  alt="Судовий незалежний автоексперт у Дніпрі"
+  className="w-full h-full object-cover"
+/>
     </div>
   </div>
 
