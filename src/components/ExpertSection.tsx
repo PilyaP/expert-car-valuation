@@ -14,7 +14,7 @@ function ExpertSection() {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl bg-black/5">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1592878995758-02b32ddabdd3?auto=format&fit=crop&w=1080&q=80"
+                src="/ai-expert.webp"
                 alt="Пилипенко Анатолій Іванович - сертифікований судовий незалежний експерт"
                 className="w-full h-auto object-contain"
               />
